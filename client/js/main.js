@@ -171,6 +171,7 @@ $(document).on("click", ".exerciselist", function() {
 
   //Übungsliste schließen
   dialog_exercise.dialog("close");
+
 });
 
 //Übung löschen
@@ -286,8 +287,14 @@ function getEntryList() {
 
 // Zeit in Zahl umrechnen
 function timeToNumber(timeString){
-  var sec = timeString.slice(6, 8),
-  min = timeString.slice(3, 5),
-  time = (min * 60) + Number(sec);
-  return time;
+  if (timeString) {
+    var sec = timeString.slice(6, 8),
+    min = timeString.slice(3, 5),
+    time = (min * 60) + Number(sec);
+    return time;
+    }
+  else {
+    return 0;
+  }
+
 }
