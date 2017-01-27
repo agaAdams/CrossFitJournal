@@ -25,6 +25,8 @@ changeWODDate(days);
 
 getEntryList();
 
+setDateInputs();
+
 //---------overlays initialisieren-----------
 //overlay zur Auswahl des WOD Typs
 dialog_type = $( "#modal_wod_type" ).dialog(dialogPresets);
@@ -40,25 +42,6 @@ dialog_exercise.dialog({title: "Choose an exercise"});
 
 dialog_add_exercise = $("#newExerciseEntry").dialog(dialogPresets);
 dialog_add_exercise.dialog({title: "Add a new exercise"});
-
-//datepicker beim Datumsfeld im WOD-Neueintrags-Formular
-//entweder als html5-Element oder jquery-ui-datepicker
-//datum auf heute setzen
-if (Modernizr.inputtypes.date) {
-  $("#entry_date").attr("type", "date");
-  $("#entry_date").val(getDate("iso", 0));
-}
-else {
-  $.datepicker.setDefaults(
-    $.extend(
-      {'dateFormat':'dd.mm.yy'},
-      $.datepicker.regional['de']
-      )
-    );
-  $("#entry_date").attr("type", "text");
-  $("#entry_date").datepicker();
-  $("#entry_date").val(getDate("de", 0));
-}
 
 //--------------------------------------------------------
 //-------------Ende der Startfunktionen JQuery------------
@@ -171,6 +154,7 @@ $(document).on("click", ".exerciselist", function() {
 
   //Übungsliste schließen
   dialog_exercise.dialog("close");
+
 });
 
 //Übung löschen
@@ -209,6 +193,15 @@ $(document).on('click', '#save_entry_btn', function() {
   // $(".exerciselist").remove();
   // getExerciseList();
 
+  //setzt die Eingabemaske zurück
+  //leer die Formularfelder
+  $("#wod_entry_form").trigger("reset");
+  //löscht alle Boxen für Übungen
+  $("#exercises_grp").children().remove();
+  //setzt das WOD-Datum auf heute zurück
+  setDateInputs();
+
+  //schließt die Eingabemaske
   dialog_entry.dialog("close");
 });
 
@@ -286,8 +279,34 @@ function getEntryList() {
 
 // Zeit in Zahl umrechnen
 function timeToNumber(timeString){
-  var sec = timeString.slice(6, 8),
-  min = timeString.slice(3, 5),
-  time = (min * 60) + Number(sec);
-  return time;
+  if (timeString) {
+    var sec = timeString.slice(6, 8),
+    min = timeString.slice(3, 5),
+    time = (min * 60) + Number(sec);
+    return time;
+    }
+  else {
+    return 0;
+  }
+}
+
+//datepicker beim Datumsfeld im WOD-Neueintrags-Formular
+//entweder als html5-Element oder jquery-ui-datepicker
+//datum auf heute setzen
+function setDateInputs() {
+  if (Modernizr.inputtypes.date) {
+    $("#entry_date").attr("type", "date");
+    $("#entry_date").val(getDate("iso", 0));
+  }
+  else {
+    $.datepicker.setDefaults(
+      $.extend(
+        {'dateFormat':'dd.mm.yy'},
+        $.datepicker.regional['de']
+        )
+      );
+    $("#entry_date").attr("type", "text");
+    $("#entry_date").datepicker();
+    $("#entry_date").val(getDate("de", 0));
+  }
 }
