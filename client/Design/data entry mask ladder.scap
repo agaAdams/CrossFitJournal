@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ScappleDocument Version="1.1" ID="69EB663E-4C5B-42B9-9A40-9638A3716AA2">
+    <Notes>
+        <Note ID="14" FontSize="12.0" Position="96.0,791.0" Width="51.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1" Style="Square"></Border>
+            </Appearance>
+            <String>felddtyp</String>
+        </Note>
+        <Note ID="15" FontSize="12.0" Position="48.0,793.0" Width="34.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+            </Appearance>
+            <String>label</String>
+        </Note>
+        <Note ID="16" FontSize="12.0" Position="191.0,794.0" Width="42.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1"></Border>
+            </Appearance>
+            <String>button</String>
+            <ConnectedNoteIDs>20</ConnectedNoteIDs>
+            <PointsToNoteIDs>20</PointsToNoteIDs>
+        </Note>
+        <Note ID="20" FontSize="12.0" Position="289.0,794.0" Width="38.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1" Style="Jagged"></Border>
+            </Appearance>
+            <String>event</String>
+            <ConnectedNoteIDs>16</ConnectedNoteIDs>
+            <PointsToNoteIDs>21</PointsToNoteIDs>
+        </Note>
+        <Note ID="22" FontSize="12.0" Position="337.110284,33.294518" Width="64.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1" Style="Square"></Border>
+            </Appearance>
+            <String>datepicker</String>
+        </Note>
+        <Note ID="23" FontSize="12.0" Position="289.110284,34.294518" Width="42.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+            </Appearance>
+            <String>datum</String>
+        </Note>
+        <Note ID="27" FontSize="12.0" Position="232.0,837.0" Width="55.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1" Style="Cloud"></Border>
+            </Appearance>
+            <String>optionen</String>
+        </Note>
+        <Note ID="44" FontSize="12.0" Position="364.110284,246.294518" Width="77.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1"></Border>
+            </Appearance>
+            <String>add exercise</String>
+            <ConnectedNoteIDs>45</ConnectedNoteIDs>
+            <PointsToNoteIDs>45</PointsToNoteIDs>
+        </Note>
+        <Note ID="45" FontSize="12.0" Position="477.110284,243.294518" Width="129.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1" Style="Jagged"></Border>
+            </Appearance>
+            <String>add new “exercise” div</String>
+            <ConnectedNoteIDs>44</ConnectedNoteIDs>
+        </Note>
+        <Note ID="46" FontSize="12.0" Position="470.110284,114.294518" Width="53.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+            </Appearance>
+            <String>exercise</String>
+        </Note>
+        <Note ID="47" FontSize="12.0" Position="470.110284,142.294518" Width="43.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+            </Appearance>
+            <String>weight</String>
+        </Note>
+        <Note ID="48" FontSize="12.0" Position="470.110284,170.294518" Width="56.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+            </Appearance>
+            <String>discance</String>
+        </Note>
+        <Note ID="49" FontSize="12.0" Position="470.110284,198.294518" Width="24.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+            </Appearance>
+            <String>cal</String>
+        </Note>
+        <Note ID="52" FontSize="12.0" Position="544.110284,116.294518" Width="61.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1" Style="Square"></Border>
+            </Appearance>
+            <String>dropdown</String>
+        </Note>
+        <Note ID="53" FontSize="12.0" Position="546.110284,143.294518" Width="49.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1" Style="Square"></Border>
+            </Appearance>
+            <String>number</String>
+        </Note>
+        <Note ID="54" FontSize="12.0" Position="545.110284,170.294518" Width="49.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1" Style="Square"></Border>
+            </Appearance>
+            <String>number</String>
+        </Note>
+        <Note ID="55" FontSize="12.0" Position="543.110284,199.294518" Width="49.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1" Style="Square"></Border>
+            </Appearance>
+            <String>number</String>
+        </Note>
+        <Note ID="143" FontSize="12.0" Position="309.110284,310.294518" Width="57.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+            </Appearance>
+            <String>total time</String>
+        </Note>
+        <Note ID="144" FontSize="12.0" Position="384.110284,312.294518" Width="71.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1" Style="Square"></Border>
+            </Appearance>
+            <String>mask __:__</String>
+        </Note>
+        <Note ID="149" FontSize="12.0" Position="380.110284,346.294518" Width="34.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1" Style="Square"></Border>
+            </Appearance>
+            <String>multi</String>
+        </Note>
+        <Note ID="150" FontSize="12.0" Position="313.110284,346.294518" Width="58.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+            </Appearance>
+            <String>comment</String>
+        </Note>
+        <Note ID="153" FontSize="12.0" Position="101.410115,30.204968" Width="42.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1">0.477193 0.557066 0.76433</Border>
+                <Fill>0.840969 0.866828 0.925903</Fill>
+            </Appearance>
+            <String>ladder</String>
+        </Note>
+        <Note ID="154" FontSize="12.0" Position="26.410115,63.204968" Width="69.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1"></Border>
+            </Appearance>
+            <String>reps ladder</String>
+        </Note>
+        <Note ID="155" FontSize="12.0" Position="138.410115,62.204968" Width="80.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1"></Border>
+            </Appearance>
+            <String>exercises a-n</String>
+        </Note>
+        <Note ID="156" FontSize="12.0" Position="156.410115,93.204968" Width="39.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1"></Border>
+            </Appearance>
+            <String>name</String>
+        </Note>
+        <Note ID="157" FontSize="12.0" Position="156.410115,121.204968" Width="43.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1"></Border>
+            </Appearance>
+            <String>weight</String>
+        </Note>
+        <Note ID="158" FontSize="12.0" Position="156.410115,149.204968" Width="56.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1"></Border>
+            </Appearance>
+            <String>discance</String>
+        </Note>
+        <Note ID="159" FontSize="12.0" Position="156.410115,177.204968" Width="24.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1"></Border>
+            </Appearance>
+            <String>cal</String>
+        </Note>
+        <Note ID="160" FontSize="12.0" Position="96.410115,212.204968" Width="57.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1"></Border>
+            </Appearance>
+            <String>total time</String>
+        </Note>
+        <Note ID="161" FontSize="12.0" Position="95.410115,240.204968" Width="58.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1"></Border>
+            </Appearance>
+            <String>comment</String>
+        </Note>
+        <Note ID="165" FontSize="12.0" Position="523.687749,34.668693" Width="117.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1" Style="Square"></Border>
+            </Appearance>
+            <String>text, nn-nn-nn-nn-nn</String>
+        </Note>
+        <Note ID="166" FontSize="12.0" Position="414.687749,34.668693" Width="69.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+            </Appearance>
+            <String>ladder reps</String>
+        </Note>
+        <Note ID="179" FontSize="12.0" Position="713.110284,244.294518" Width="77.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1"></Border>
+            </Appearance>
+            <String>add exercise</String>
+            <ConnectedNoteIDs>180</ConnectedNoteIDs>
+            <PointsToNoteIDs>180</PointsToNoteIDs>
+        </Note>
+        <Note ID="180" FontSize="12.0" Position="827.110284,240.294518" Width="129.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1" Style="Jagged"></Border>
+            </Appearance>
+            <String>add new “exercise” div</String>
+            <ConnectedNoteIDs>179</ConnectedNoteIDs>
+        </Note>
+        <Note ID="181" FontSize="12.0" Position="819.110284,112.294518" Width="53.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+            </Appearance>
+            <String>exercise</String>
+        </Note>
+        <Note ID="182" FontSize="12.0" Position="819.110284,140.294518" Width="43.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+            </Appearance>
+            <String>weight</String>
+        </Note>
+        <Note ID="183" FontSize="12.0" Position="819.110284,168.294518" Width="56.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+            </Appearance>
+            <String>discance</String>
+        </Note>
+        <Note ID="184" FontSize="12.0" Position="819.110284,196.294518" Width="24.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+            </Appearance>
+            <String>cal</String>
+        </Note>
+        <Note ID="185" FontSize="12.0" Position="893.110284,114.294518" Width="61.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1" Style="Square"></Border>
+            </Appearance>
+            <String>dropdown</String>
+        </Note>
+        <Note ID="186" FontSize="12.0" Position="895.110284,141.294518" Width="49.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1" Style="Square"></Border>
+            </Appearance>
+            <String>number</String>
+        </Note>
+        <Note ID="187" FontSize="12.0" Position="894.110284,168.294518" Width="49.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1" Style="Square"></Border>
+            </Appearance>
+            <String>number</String>
+        </Note>
+        <Note ID="188" FontSize="12.0" Position="892.110284,197.294518" Width="49.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1" Style="Square"></Border>
+            </Appearance>
+            <String>number</String>
+        </Note>
+    </Notes>
+    <BackgroundShapes>
+        <Shape ID="189" Sticky="Yes" Position="278.110284,17.294518" Width="730.0" Height="375.0">
+            <Appearance>
+                <Border Weight="1"></Border>
+            </Appearance>
+        </Shape>
+        <Shape ID="58" Sticky="Yes" Position="324.110284,98.294518" Width="324.0" Height="189.972961">
+            <Appearance>
+                <Border Weight="1">0.477193 0.557066 0.76433</Border>
+                <Fill>0.840969 0.866828 0.925903</Fill>
+            </Appearance>
+        </Shape>
+        <Shape ID="152" Sticky="Yes" Position="15.410115,14.204968" Width="244.0" Height="266.0">
+            <Appearance>
+                <Border Weight="1"></Border>
+            </Appearance>
+        </Shape>
+        <Shape ID="178" Sticky="Yes" Position="673.110284,96.294518" Width="324.0" Height="189.972961">
+            <Appearance>
+                <Border Weight="1"></Border>
+            </Appearance>
+        </Shape>
+    </BackgroundShapes>
+    <Stacks>
+        <Stack>46-49</Stack>
+        <Stack>156-159</Stack>
+        <Stack>181-184</Stack>
+    </Stacks>
+    <AutoFit>14-16, 20, 22-23, 27, 44-49, 52-55, 143-144, 149-150, 153-161, 165-166, 179-188</AutoFit>
+    <NoteStyles>
+        <Style Name="Blue Bubble" ID="2A93890D-76EB-41CC-8A36-940B17A7F077" AffectFontStyle="No" AffectAlignment="No" AffectTextColor="No" AffectNoteBody="Yes" AffectFade="No">
+            <BorderThickness>1</BorderThickness>
+            <BorderColor>0.477193 0.557066 0.76433</BorderColor>
+            <FillColor>0.840969 0.866828 0.925903</FillColor>
+        </Style>
+        <Style Name="Brown Bubble" ID="1A6665EE-6E70-4E10-832D-115194305B9D" AffectFontStyle="No" AffectAlignment="No" AffectTextColor="No" AffectNoteBody="Yes" AffectFade="No">
+            <BorderThickness>1</BorderThickness>
+            <BorderColor>0.290055 0.1523 0.182215</BorderColor>
+            <FillColor>0.940019 0.892907 0.779716</FillColor>
+        </Style>
+        <Style Name="Green Bubble" ID="06D5806E-B48A-4291-B4AF-41E3A9C9B2CE" AffectFontStyle="No" AffectAlignment="No" AffectTextColor="No" AffectNoteBody="Yes" AffectFade="No">
+            <BorderThickness>1</BorderThickness>
+            <BorderColor>0.331867 0.609932 0.356197</BorderColor>
+            <FillColor>0.790123 0.882328 0.80198</FillColor>
+        </Style>
+        <Style Name="Pink Bubble" ID="FF168B0C-EE11-43CE-87DA-2C7429E8652A" AffectFontStyle="No" AffectAlignment="No" AffectTextColor="No" AffectNoteBody="Yes" AffectFade="No">
+            <BorderThickness>1</BorderThickness>
+            <BorderColor>0.747881 0.366532 0.542813</BorderColor>
+            <FillColor>0.918452 0.807302 0.863467</FillColor>
+        </Style>
+        <Style Name="Red Text" ID="BE5BA794-BE2A-4F79-B182-FB22916F69F8" AffectFontStyle="No" AffectAlignment="No" AffectTextColor="Yes" AffectNoteBody="No" AffectFade="No">
+            <TextColor>1.0 0.0 0.0</TextColor>
+        </Style>
+        <Style Name="Title Text" ID="D83D4D41-FFAC-4C53-9EBD-C41833954523" AffectFontStyle="Yes" AffectAlignment="Yes" AffectTextColor="No" AffectNoteBody="No" AffectFade="No">
+            <FontSize>28.0</FontSize>
+            <IsBold>Yes</IsBold>
+        </Style>
+        <Style Name="Yellow Bubble" ID="67C10585-5E5B-42E4-A717-7F73CDE45444" AffectFontStyle="No" AffectAlignment="No" AffectTextColor="No" AffectNoteBody="Yes" AffectFade="No">
+            <BorderThickness>1</BorderThickness>
+            <BorderColor>0.756763 0.785592 0.373258</BorderColor>
+            <FillColor>0.906773 0.910625 0.634363</FillColor>
+        </Style>
+    </NoteStyles>
+    <UISettings>
+        <BackgroundColor>0.999737 0.986332 0.931298</BackgroundColor>
+        <DefaultFont>Helvetica</DefaultFont>
+        <DefaultTextColor>0.0 0.0 0.0</DefaultTextColor>
+    </UISettings>
+    <PrintSettings PaperSize="595.0,842.0" LeftMargin="72.0" RightMargin="72.0" TopMargin="90.0" BottomMargin="90.0" PaperType="iso-a4" Orientation="Portrait" HorizontalPagination="Clip" VerticalPagination="Auto" ScaleFactor="1.0" HorizontallyCentered="Yes" VerticallyCentered="Yes" Collates="Yes" PagesAcross="1" PagesDown="1"></PrintSettings>
+</ScappleDocument>

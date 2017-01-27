@@ -1,0 +1,602 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ScappleDocument Version="1.1" ID="CD1E0C20-3896-44CF-9939-E8219C3C8A63">
+    <Notes>
+        <Note ID="0" FontSize="28.0" Position="329.0,42.0" Width="145.0">
+            <Appearance></Appearance>
+            <String>New Entry</String>
+            <Formatting>
+                <FormatRange Bold="Yes" Underline="Yes">0,9</FormatRange>
+            </Formatting>
+        </Note>
+        <Note ID="10" FontSize="12.0" Position="1291.0,972.0" Width="51.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1" Style="Square"></Border>
+                <Fill>0.906773 0.910625 0.634363</Fill>
+            </Appearance>
+            <String>felddtyp</String>
+        </Note>
+        <Note ID="11" FontSize="12.0" Position="1382.0,974.0" Width="59.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1"></Border>
+                <Fill>0.918452 0.807302 0.863467</Fill>
+            </Appearance>
+            <String>klickable</String>
+            <ConnectedNoteIDs>12</ConnectedNoteIDs>
+            <PointsToNoteIDs>12</PointsToNoteIDs>
+            <Formatting>
+                <FormatRange Bold="Yes">0,9</FormatRange>
+            </Formatting>
+        </Note>
+        <Note ID="12" FontSize="12.0" Position="1479.0,975.0" Width="38.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1" Style="Jagged"></Border>
+                <Fill>0.401373 0.688769 0.216559</Fill>
+            </Appearance>
+            <String>event</String>
+            <ConnectedNoteIDs>11</ConnectedNoteIDs>
+        </Note>
+        <Note ID="13" FontSize="12.0" Position="1221.0,969.0" Width="36.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+            </Appearance>
+            <String>label</String>
+            <Formatting>
+                <FormatRange Bold="Yes" Underline="Yes">0,5</FormatRange>
+            </Formatting>
+        </Note>
+        <Note ID="14" FontSize="12.0" Position="1550.0,971.0" Width="41.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1" Style="Cloud"></Border>
+            </Appearance>
+            <String>option</String>
+        </Note>
+        <Note ID="15" FontSize="12.0" Position="86.0,175.0" Width="67.0" Faded="Yes">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1" Style="Square"></Border>
+                <Fill>0.906773 0.910625 0.634363</Fill>
+            </Appearance>
+            <String>description</String>
+        </Note>
+        <Note ID="16" FontSize="12.0" Position="167.0,141.0" Width="64.0" Faded="Yes">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1"></Border>
+                <Fill>0.918452 0.807302 0.863467</Fill>
+            </Appearance>
+            <String>name link</String>
+            <ConnectedNoteIDs>17-18</ConnectedNoteIDs>
+            <PointsToNoteIDs>17</PointsToNoteIDs>
+            <Formatting>
+                <FormatRange Bold="Yes">0,9</FormatRange>
+            </Formatting>
+        </Note>
+        <Note ID="17" FontSize="12.0" Position="275.0,143.0" Width="169.0" Faded="Yes">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1" Style="Jagged"></Border>
+                <Fill>0.401373 0.688769 0.216559</Fill>
+            </Appearance>
+            <String>show data entry mask $ladder</String>
+            <ConnectedNoteIDs>16</ConnectedNoteIDs>
+        </Note>
+        <Note ID="18" FontSize="12.0" Position="92.0,140.0" Width="45.0" Faded="Yes">
+            <Appearance>
+                <Alignment>Left</Alignment>
+            </Appearance>
+            <String>ladder</String>
+            <ConnectedNoteIDs>16</ConnectedNoteIDs>
+            <Formatting>
+                <FormatRange Bold="Yes" Underline="Yes">0,6</FormatRange>
+            </Formatting>
+        </Note>
+        <Note ID="19" FontSize="12.0" Position="64.0,293.0" Width="67.0" Faded="Yes">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1" Style="Square"></Border>
+                <Fill>0.906773 0.910625 0.634363</Fill>
+            </Appearance>
+            <String>description</String>
+        </Note>
+        <Note ID="20" FontSize="12.0" Position="145.0,259.0" Width="64.0" Faded="Yes">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1"></Border>
+                <Fill>0.918452 0.807302 0.863467</Fill>
+            </Appearance>
+            <String>name link</String>
+            <ConnectedNoteIDs>21-22</ConnectedNoteIDs>
+            <PointsToNoteIDs>21</PointsToNoteIDs>
+            <Formatting>
+                <FormatRange Bold="Yes">0,9</FormatRange>
+            </Formatting>
+        </Note>
+        <Note ID="21" FontSize="12.0" Position="253.0,261.0" Width="179.0" Faded="Yes">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1" Style="Jagged"></Border>
+                <Fill>0.401373 0.688769 0.216559</Fill>
+            </Appearance>
+            <String>show data entry mask $for_time</String>
+            <ConnectedNoteIDs>20</ConnectedNoteIDs>
+        </Note>
+        <Note ID="22" FontSize="12.0" Position="70.0,258.0" Width="53.0" Faded="Yes">
+            <Appearance>
+                <Alignment>Left</Alignment>
+            </Appearance>
+            <String>for time</String>
+            <ConnectedNoteIDs>20</ConnectedNoteIDs>
+            <Formatting>
+                <FormatRange Bold="Yes" Underline="Yes">0,8</FormatRange>
+            </Formatting>
+        </Note>
+        <Note ID="25" FontSize="12.0" Position="64.0,412.0" Width="67.0" Faded="Yes">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1" Style="Square"></Border>
+                <Fill>0.906773 0.910625 0.634363</Fill>
+            </Appearance>
+            <String>description</String>
+        </Note>
+        <Note ID="26" FontSize="12.0" Position="209.0,380.0" Width="64.0" Faded="Yes">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1"></Border>
+                <Fill>0.918452 0.807302 0.863467</Fill>
+            </Appearance>
+            <String>name link</String>
+            <ConnectedNoteIDs>27-28</ConnectedNoteIDs>
+            <PointsToNoteIDs>27</PointsToNoteIDs>
+            <Formatting>
+                <FormatRange Bold="Yes">0,9</FormatRange>
+            </Formatting>
+        </Note>
+        <Note ID="27" FontSize="12.0" Position="293.0,380.0" Width="179.0" Faded="Yes">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1" Style="Jagged"></Border>
+                <Fill>0.401373 0.688769 0.216559</Fill>
+            </Appearance>
+            <String>show data entry mask $for_time</String>
+            <ConnectedNoteIDs>26</ConnectedNoteIDs>
+        </Note>
+        <Note ID="28" FontSize="12.0" Position="65.0,377.0" Width="200.0" Faded="Yes">
+            <Appearance>
+                <Alignment>Left</Alignment>
+            </Appearance>
+            <String>rounds for time/as many rounds as possible in time</String>
+            <ConnectedNoteIDs>26</ConnectedNoteIDs>
+        </Note>
+        <Note ID="32" FontSize="12.0" Position="653.0,139.0" Width="79.0" Faded="Yes">
+            <Appearance>
+                <Alignment>Left</Alignment>
+            </Appearance>
+            <String>olympic lifts</String>
+            <ConnectedNoteIDs>45</ConnectedNoteIDs>
+            <Formatting>
+                <FormatRange Bold="Yes" Underline="Yes">0,13</FormatRange>
+            </Formatting>
+        </Note>
+        <Note ID="33" FontSize="12.0" Position="64.0,497.0" Width="123.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+            </Appearance>
+            <String>rounds of fixed time</String>
+            <ConnectedNoteIDs>40</ConnectedNoteIDs>
+            <Formatting>
+                <FormatRange Bold="Yes" Underline="Yes">0,20</FormatRange>
+            </Formatting>
+        </Note>
+        <Note ID="40" FontSize="12.0" Position="202.0,497.0" Width="64.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1"></Border>
+                <Fill>0.918452 0.807302 0.863467</Fill>
+            </Appearance>
+            <String>name link</String>
+            <ConnectedNoteIDs>33, 41</ConnectedNoteIDs>
+            <PointsToNoteIDs>41</PointsToNoteIDs>
+            <Formatting>
+                <FormatRange Bold="Yes">0,9</FormatRange>
+            </Formatting>
+        </Note>
+        <Note ID="41" FontSize="12.0" Position="310.0,499.0" Width="144.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1" Style="Jagged"></Border>
+                <Fill>0.401373 0.688769 0.216559</Fill>
+            </Appearance>
+            <String>show data entry mask $rounds of fixed time</String>
+            <ConnectedNoteIDs>40</ConnectedNoteIDs>
+        </Note>
+        <Note ID="44" FontSize="12.0" Position="666.0,172.0" Width="67.0" Faded="Yes">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1" Style="Square"></Border>
+                <Fill>0.906773 0.910625 0.634363</Fill>
+            </Appearance>
+            <String>description</String>
+        </Note>
+        <Note ID="45" FontSize="12.0" Position="747.0,139.0" Width="64.0" Faded="Yes">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1"></Border>
+                <Fill>0.918452 0.807302 0.863467</Fill>
+            </Appearance>
+            <String>name link</String>
+            <ConnectedNoteIDs>32, 46</ConnectedNoteIDs>
+            <PointsToNoteIDs>46</PointsToNoteIDs>
+            <Formatting>
+                <FormatRange Bold="Yes">0,9</FormatRange>
+            </Formatting>
+        </Note>
+        <Note ID="46" FontSize="12.0" Position="855.0,140.0" Width="224.0" Faded="Yes">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1" Style="Jagged"></Border>
+                <Fill>0.401373 0.688769 0.216559</Fill>
+            </Appearance>
+            <String>show data entry mask $olympic_lifts</String>
+            <ConnectedNoteIDs>45</ConnectedNoteIDs>
+        </Note>
+        <Note ID="51" FontSize="12.0" Position="653.0,260.0" Width="119.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+            </Appearance>
+            <String>as long as possible</String>
+            <ConnectedNoteIDs>53</ConnectedNoteIDs>
+            <Formatting>
+                <FormatRange Bold="Yes" Underline="Yes">0,19</FormatRange>
+            </Formatting>
+        </Note>
+        <Note ID="52" FontSize="12.0" Position="664.726562,293.871094" Width="200.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1" Style="Square"></Border>
+                <Fill>0.906773 0.910625 0.634363</Fill>
+            </Appearance>
+            <String>Every 2 minutes for as long as possible complete:
+From 0:00-2:00
+   15-ft. rope climbs, 2 ascents
+   185-lb. front squats, 2 reps
+From 2:00-4:00
+   15-ft. rope climbs, 2 ascents
+   185-lb. front squats, 4 reps
+From 4:00-6:00
+   15-ft. rope climbs, 2 ascents
+   185-lb. front squats, 6 reps
+Continue adding 2 reps to the front squat each interval for as long as you are able.
+Post number of minutes completed to comments.</String>
+            <Formatting>
+                <FormatRange Italic="Yes">50,14</FormatRange>
+                <FormatRange Italic="Yes">130,14</FormatRange>
+                <FormatRange Italic="Yes">210,14</FormatRange>
+            </Formatting>
+        </Note>
+        <Note ID="53" FontSize="12.0" Position="811.0,261.0" Width="64.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1"></Border>
+                <Fill>0.918452 0.807302 0.863467</Fill>
+            </Appearance>
+            <String>name link</String>
+            <ConnectedNoteIDs>51, 54</ConnectedNoteIDs>
+            <PointsToNoteIDs>54</PointsToNoteIDs>
+            <Formatting>
+                <FormatRange Bold="Yes">0,9</FormatRange>
+            </Formatting>
+        </Note>
+        <Note ID="54" FontSize="12.0" Position="932.0,263.0" Width="224.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1" Style="Jagged"></Border>
+                <Fill>0.401373 0.688769 0.216559</Fill>
+            </Appearance>
+            <String>show data entry mask $as long as possible</String>
+            <ConnectedNoteIDs>53</ConnectedNoteIDs>
+        </Note>
+        <Note ID="56" FontSize="12.0" Position="55.375,610.988281" Width="127.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+            </Appearance>
+            <String>rounds each for time</String>
+            <ConnectedNoteIDs>58</ConnectedNoteIDs>
+            <Formatting>
+                <FormatRange Bold="Yes" Underline="Yes">0,20</FormatRange>
+            </Formatting>
+        </Note>
+        <Note ID="57" FontSize="12.0" Position="68.398438,644.148438" Width="200.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1" Style="Square"></Border>
+                <Fill>0.906773 0.910625 0.634363</Fill>
+            </Appearance>
+            <String>5 rounds, each for time, of:
+Run 800 meters
+Rest 3 minutes
+Post time for each interval to comments.</String>
+        </Note>
+        <Note ID="58" FontSize="12.0" Position="213.375,610.988281" Width="64.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1"></Border>
+                <Fill>0.918452 0.807302 0.863467</Fill>
+            </Appearance>
+            <String>name link</String>
+            <ConnectedNoteIDs>56, 59</ConnectedNoteIDs>
+            <PointsToNoteIDs>59</PointsToNoteIDs>
+            <Formatting>
+                <FormatRange Bold="Yes">0,9</FormatRange>
+            </Formatting>
+        </Note>
+        <Note ID="59" FontSize="12.0" Position="334.375,612.988281" Width="224.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1" Style="Jagged"></Border>
+                <Fill>0.401373 0.688769 0.216559</Fill>
+            </Appearance>
+            <String>show data entry mask $rounds each for time</String>
+            <ConnectedNoteIDs>58</ConnectedNoteIDs>
+        </Note>
+        <Note ID="66" FontSize="12.0" Position="50.824219,782.472656" Width="200.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+            </Appearance>
+            <String>rounds with fixed time per round to complete</String>
+            <ConnectedNoteIDs>68</ConnectedNoteIDs>
+            <Formatting>
+                <FormatRange Bold="Yes" Underline="Yes">0,44</FormatRange>
+            </Formatting>
+        </Note>
+        <Note ID="67" FontSize="12.0" Position="64.167969,830.558594" Width="200.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1" Style="Square"></Border>
+                <Fill>0.906773 0.910625 0.634363</Fill>
+            </Appearance>
+            <String>Nukes
+8 minutes to complete:
+1-mile run
+315-lb. deadlifts, max reps
+Then, 10 minutes to complete:
+1-mile run
+225-lb. power cleans, max reps
+Then, 12 minutes to complete:
+1-mile run
+135-lb. overhead squats, max reps
+Do not rest between rounds. Post run times and reps completed for each exercise to comments.</String>
+            <Formatting>
+                <FormatRange Bold="Yes">0,5</FormatRange>
+            </Formatting>
+        </Note>
+        <Note ID="68" FontSize="12.0" Position="266.824219,787.472656" Width="68.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1"></Border>
+                <Fill>0.918452 0.807302 0.863467</Fill>
+            </Appearance>
+            <String>name link</String>
+            <ConnectedNoteIDs>66, 69</ConnectedNoteIDs>
+            <PointsToNoteIDs>69</PointsToNoteIDs>
+            <Formatting>
+                <FormatRange Bold="Yes">0,9</FormatRange>
+            </Formatting>
+        </Note>
+        <Note ID="69" FontSize="12.0" Position="400.824219,787.472656" Width="144.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1" Style="Jagged"></Border>
+                <Fill>0.401373 0.688769 0.216559</Fill>
+            </Appearance>
+            <String>show data entry mask $rounds of fixed time</String>
+            <ConnectedNoteIDs>68</ConnectedNoteIDs>
+        </Note>
+        <Note ID="71" FontSize="12.0" Position="648.882812,623.492188" Width="46.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+            </Appearance>
+            <String>Tabata</String>
+            <ConnectedNoteIDs>73</ConnectedNoteIDs>
+            <Formatting>
+                <FormatRange Bold="Yes" Underline="Yes">0,6</FormatRange>
+            </Formatting>
+        </Note>
+        <Note ID="72" FontSize="12.0" Position="662.882812,670.492188" Width="67.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1" Style="Square"></Border>
+                <Fill>0.906773 0.910625 0.634363</Fill>
+            </Appearance>
+            <String>description</String>
+        </Note>
+        <Note ID="73" FontSize="12.0" Position="864.882812,627.492188" Width="68.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1"></Border>
+                <Fill>0.918452 0.807302 0.863467</Fill>
+            </Appearance>
+            <String>name link</String>
+            <ConnectedNoteIDs>71, 74</ConnectedNoteIDs>
+            <PointsToNoteIDs>74</PointsToNoteIDs>
+            <Formatting>
+                <FormatRange Bold="Yes">0,9</FormatRange>
+            </Formatting>
+        </Note>
+        <Note ID="74" FontSize="12.0" Position="998.882812,629.492188" Width="144.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1" Style="Jagged"></Border>
+                <Fill>0.401373 0.688769 0.216559</Fill>
+            </Appearance>
+            <String>show data entry mask $rounds of fixed time</String>
+            <ConnectedNoteIDs>73</ConnectedNoteIDs>
+        </Note>
+        <Note ID="76" FontSize="12.0" Position="652.609375,750.910156" Width="63.0" Faded="Yes">
+            <Appearance>
+                <Alignment>Left</Alignment>
+            </Appearance>
+            <String>free entry</String>
+            <ConnectedNoteIDs>78</ConnectedNoteIDs>
+            <Formatting>
+                <FormatRange Bold="Yes" Underline="Yes">0,10</FormatRange>
+            </Formatting>
+        </Note>
+        <Note ID="77" FontSize="12.0" Position="666.609375,798.910156" Width="67.0" Faded="Yes">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1" Style="Square"></Border>
+                <Fill>0.906773 0.910625 0.634363</Fill>
+            </Appearance>
+            <String>description</String>
+        </Note>
+        <Note ID="78" FontSize="12.0" Position="868.609375,755.910156" Width="68.0" Faded="Yes">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1"></Border>
+                <Fill>0.918452 0.807302 0.863467</Fill>
+            </Appearance>
+            <String>name link</String>
+            <ConnectedNoteIDs>76, 79</ConnectedNoteIDs>
+            <PointsToNoteIDs>79</PointsToNoteIDs>
+            <Formatting>
+                <FormatRange Bold="Yes">0,9</FormatRange>
+            </Formatting>
+        </Note>
+        <Note ID="79" FontSize="12.0" Position="1002.609375,757.910156" Width="144.0" Faded="Yes">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1" Style="Jagged"></Border>
+                <Fill>0.401373 0.688769 0.216559</Fill>
+            </Appearance>
+            <String>show data entry mask $rounds of fixed time</String>
+            <ConnectedNoteIDs>78</ConnectedNoteIDs>
+        </Note>
+    </Notes>
+    <BackgroundShapes>
+        <Shape ID="24" Sticky="Yes" Position="54.0,117.0" Width="544.0" Height="97.0" Faded="Yes">
+            <Appearance>
+                <Border Weight="1"></Border>
+            </Appearance>
+        </Shape>
+        <Shape ID="29" Sticky="Yes" Position="54.0,240.0" Width="535.0" Height="97.0" Faded="Yes">
+            <Appearance>
+                <Border Weight="1"></Border>
+            </Appearance>
+        </Shape>
+        <Shape ID="42" Sticky="Yes" Position="54.0,359.0" Width="530.0" Height="97.0" Faded="Yes">
+            <Appearance>
+                <Border Weight="1"></Border>
+            </Appearance>
+        </Shape>
+        <Shape ID="47" Sticky="Yes" Position="643.0,119.0" Width="550.0" Height="92.0" Faded="Yes">
+            <Appearance>
+                <Border Weight="1"></Border>
+            </Appearance>
+        </Shape>
+        <Shape ID="43" Sticky="Yes" Position="54.0,478.0" Width="531.0" Height="97.0">
+            <Appearance>
+                <Border Weight="1"></Border>
+            </Appearance>
+        </Shape>
+        <Shape ID="50" Sticky="Yes" Position="643.0,241.0" Width="550.0" Height="337.0">
+            <Appearance>
+                <Border Weight="1"></Border>
+            </Appearance>
+        </Shape>
+        <Shape ID="55" Sticky="Yes" Position="45.375,590.988281" Width="553.0" Height="164.160156">
+            <Appearance>
+                <Border Weight="1"></Border>
+            </Appearance>
+        </Shape>
+        <Shape ID="65" Sticky="Yes" Position="40.824219,767.472656" Width="531.800781" Height="285.085938">
+            <Appearance>
+                <Border Weight="1"></Border>
+            </Appearance>
+        </Shape>
+        <Shape ID="70" Sticky="Yes" Position="638.882812,604.492188" Width="558.0" Height="95.316406">
+            <Appearance>
+                <Border Weight="1"></Border>
+            </Appearance>
+        </Shape>
+        <Shape ID="75" Sticky="Yes" Position="642.609375,732.910156" Width="564.0" Height="95.316406" Faded="Yes">
+            <Appearance>
+                <Border Weight="1"></Border>
+            </Appearance>
+        </Shape>
+    </BackgroundShapes>
+    <AutoFit>0, 10-22, 25-27, 32-33, 40, 44-45, 51, 53, 56, 58, 71-72, 76-77</AutoFit>
+    <NoteStyles>
+        <Style Name="feldtyp" ID="E00B9D6A-D61C-4DD1-900D-0D65AEDC3BED" AffectFontStyle="Yes" AffectAlignment="Yes" AffectTextColor="Yes" AffectNoteBody="Yes" AffectSize="No" AffectFade="Yes" AffectSticky="Yes">
+            <FontSize>12.0</FontSize>
+            <Alignment>Left</Alignment>
+            <BorderThickness>1</BorderThickness>
+            <BorderStyle>Square</BorderStyle>
+            <FillColor>0.906773 0.910625 0.634363</FillColor>
+            <Size>51.0,150.0</Size>
+        </Style>
+        <Style Name="feldtyp" ID="16F0E022-57A3-4229-82B9-E361D45E05FE" AffectFontStyle="Yes" AffectAlignment="Yes" AffectTextColor="Yes" AffectNoteBody="Yes" AffectSize="No" AffectFade="Yes" AffectSticky="Yes">
+            <FontSize>12.0</FontSize>
+            <Alignment>Left</Alignment>
+            <BorderThickness>1</BorderThickness>
+            <BorderStyle>Square</BorderStyle>
+            <FillColor>0.906773 0.910625 0.634363</FillColor>
+            <Size>51.0,150.0</Size>
+        </Style>
+        <Style Name="klickable" ID="628910D2-34E1-4178-A7FF-043112F3CCE9" AffectFontStyle="Yes" AffectAlignment="Yes" AffectTextColor="Yes" AffectNoteBody="Yes" AffectSize="No" AffectFade="No" AffectSticky="Yes">
+            <FontSize>12.0</FontSize>
+            <Alignment>Left</Alignment>
+            <BorderThickness>1</BorderThickness>
+            <FillColor>0.918452 0.807302 0.863467</FillColor>
+            <Size>59.0,150.0</Size>
+            <IsBold>Yes</IsBold>
+        </Style>
+        <Style Name="klickable" ID="E49ABD8D-1715-4D0C-BCC8-B6B109C5FEEE" AffectFontStyle="Yes" AffectAlignment="Yes" AffectTextColor="Yes" AffectNoteBody="Yes" AffectSize="No" AffectFade="No" AffectSticky="Yes">
+            <FontSize>12.0</FontSize>
+            <Alignment>Left</Alignment>
+            <BorderThickness>1</BorderThickness>
+            <FillColor>0.918452 0.807302 0.863467</FillColor>
+            <Size>59.0,150.0</Size>
+            <IsBold>Yes</IsBold>
+        </Style>
+        <Style Name="label" ID="E7D24FBE-4E31-4B28-ADF8-461D86568231" AffectFontStyle="Yes" AffectAlignment="Yes" AffectTextColor="Yes" AffectNoteBody="Yes" AffectSize="No" AffectFade="No" AffectSticky="Yes">
+            <FontSize>12.0</FontSize>
+            <Alignment>Left</Alignment>
+            <BorderThickness>0</BorderThickness>
+            <Size>36.0,150.0</Size>
+            <IsBold>Yes</IsBold>
+            <IsUnderlined>Yes</IsUnderlined>
+        </Style>
+        <Style Name="label" ID="66349513-B18D-43AF-808F-5EA9FD3478D5" AffectFontStyle="Yes" AffectAlignment="Yes" AffectTextColor="Yes" AffectNoteBody="Yes" AffectSize="No" AffectFade="No" AffectSticky="Yes">
+            <FontSize>12.0</FontSize>
+            <Alignment>Left</Alignment>
+            <BorderThickness>0</BorderThickness>
+            <Size>36.0,150.0</Size>
+            <IsBold>Yes</IsBold>
+            <IsUnderlined>Yes</IsUnderlined>
+        </Style>
+        <Style Name="optionen" ID="0A2CF672-C462-4F8E-A013-EB7D9AC6F96F" AffectFontStyle="Yes" AffectAlignment="Yes" AffectTextColor="Yes" AffectNoteBody="Yes" AffectSize="No" AffectFade="No" AffectSticky="Yes">
+            <FontSize>12.0</FontSize>
+            <Alignment>Left</Alignment>
+            <BorderThickness>1</BorderThickness>
+            <BorderStyle>Cloud</BorderStyle>
+            <Size>113.0,150.0</Size>
+        </Style>
+        <Style Name="optionen" ID="6622C61C-B14B-48BA-855D-9C4973A33AE5" AffectFontStyle="Yes" AffectAlignment="Yes" AffectTextColor="Yes" AffectNoteBody="Yes" AffectSize="No" AffectFade="No" AffectSticky="Yes">
+            <FontSize>12.0</FontSize>
+            <Alignment>Left</Alignment>
+            <BorderThickness>1</BorderThickness>
+            <BorderStyle>Cloud</BorderStyle>
+            <Size>113.0,150.0</Size>
+        </Style>
+    </NoteStyles>
+    <UISettings>
+        <BackgroundColor>0.999737 0.986332 0.931298</BackgroundColor>
+        <DefaultFont>Helvetica</DefaultFont>
+        <DefaultTextColor>0.0 0.0 0.0</DefaultTextColor>
+    </UISettings>
+    <PrintSettings PaperSize="595.0,842.0" LeftMargin="72.0" RightMargin="72.0" TopMargin="90.0" BottomMargin="90.0" PaperType="iso-a4" Orientation="Portrait" HorizontalPagination="Clip" VerticalPagination="Auto" ScaleFactor="1.0" HorizontallyCentered="Yes" VerticallyCentered="Yes" Collates="Yes" PagesAcross="1" PagesDown="1"></PrintSettings>
+</ScappleDocument>

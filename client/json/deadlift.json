@@ -1,0 +1,9 @@
+[
+	{ "name" : "deadlift", "type" : "lift", "weight" : "true", "reps" : "true" },
+	{ "name" : "run", "type" : "endurance", "time" : "true", "distance" : "true" },
+	{ "name" : "pull-up", "type" : "bodyweight", "reps" : "true", "time" : "true" },
+	{ "name" : "squat", "type" : "bodyweight", "reps" : "true", "time" : "true" },
+	{ "name" : "push-up", "type" : "bodyweight", "reps" : "true", "time" : "true" },
+	{ "name" : "sit-up", "type" : "bodyweight", "reps" : "true", "time" : "true" },
+	{ "name" : "hip-extension", "type" : "bodyweight", "reps" : "true", "time" : "true" }
+]

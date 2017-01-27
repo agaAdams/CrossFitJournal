@@ -1,0 +1,118 @@
+<!--Modal PopUps-->
+	
+<!--modal popup wod type-->
+<div id="modal_wod_type" class="modal">
+	<div class="tableContainer">
+		<div class="tableRow">
+			<div class="type_list">
+				<h3><button id="named_wod_btn" class="button" type="button">Named</button></h3>
+				<p>Choose a Girl or Hero WOD</p>
+			</div>
+			<div class="type_list">
+				<h3><button id="generic_wod_btn" class="button" type="button">Generic</button></h3>
+				<p>Record a generic WOD. If nothing else fits.</p>
+			</div>
+			<div class="type_list">
+				<h3><button id="ol_wod_btn" class="button" type="button">Olympic Lifts</button></h3>
+				<p>Perform sets of fixed reps (1,3,5,10). Record max weight lifted for each set.</p>
+			</div>
+		</div>
+	
+		<div class="tableRow">
+			<div class="type_list">
+				<h3><button id="ladder_wod_btn" class="button" type="button">Ladder</button></h3>
+				<p>Perform the same reps of each exercise (21-15-9). Record total time.</p>
+			</div>
+			<div class="type_list">
+				<h3><button id="amrap_wod_btn" class="button" type="button">As Many Rounds As Possible</button></h3>
+				<p>Perform as many rounds as possible in a set time. Record number of rounds completed.</p>
+			</div>
+			<div class="type_list">
+				<h3><button id="ft_wod_btn" class="button" type="button">For Time</button></h3>
+				<p>Perform as soon as possible.</p>
+			</div>
+		</div>
+
+		<div class="tableRow">
+			<div class="type_list">
+				<h3><button id="rft_wod_btn" class="button" type="button">Rounds for Time</button></h3>
+				<p>Perform some rounds as soon as possible. Record total time.</p>
+			</div>
+			<div class="type_list">
+				<h3><button id="rofet_wod_btn" class="button" type="button">Rounds of fixed exercise time</button></h3>
+				<p>Perform a set number of rounds with each exercise having a fixed time. Record number of total reps.</p>
+			</div>
+			<div class="type_list">
+				<h3><button id="reft_wod_btn" class="button" type="button">Rounds each for Time</button></h3>
+				<p>Perform a set number of rounds, each for time. Record time of each round.</p>
+			</div>
+		</div>
+	
+		<div class="tableRow">
+			<div class="type_list">
+				<h3><button id="alap_wod_btn" class="button" type="button">As Long As Possible</button></h3>
+				<p>Perform a set number of reps and exercises in a set time for as many rounds as possible. Record number of rounds completed.</p>
+			</div>
+			<div class="type_list">
+				<h3><button id="rwftprtc_wod_btn" class="button" type="button">Rounds With Fixed Time Per Round To Complete</button></h3>
+				<p>Complete a set number of rounds, each with a set of exercises performed with max reps. Record reps completed for each exercise.</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<!--modal popup wod entry-->
+	<div id="modal_wod_entry" class="modal">
+		<div id="entry_top" class="wod_entry">
+			<form class="wod_entry">
+				<p>
+				Date:<input type="text" id="entry_date" name="entry_date" size="10">
+				<span id="ladder_s">Ladder:<input type="text" id="ladder" name="ladder" value="21-15-9" size="15"></span> <!--input mask?-->
+				</p>
+			</form>
+		</div>
+		<div id="round" class="wod_entry">
+			<div id="exercise">
+				<form class="wod_entry">
+					<p>
+
+					Exercise:
+					<select  id="exercise_name" name="exercise_name"><!-- dropdown select mit allen übungen -->
+						
+					</select></br>
+					<span id="weight_s">Weight:<input type="number" id="weight" name="weight" value="0" min="0" max="999">kg</span>
+					<span id="distance_s">Distance:<input type="number" id="distance" name="distance" value="0" min="0" max="10000">
+					Einheit:<input type="text" id="dist_einheit" name="dist_einheit" value="m" size="2"></span></br>
+					<span id="cal_s">Calories:<input type="number" id="cal" name="cal" value="0" min="0" max="999"></span>
+					<span id="reps_s">Reps:<input type="number" id="reps" name="reps" value="0" min="0" max="999"></span></br>
+					<span id="ex_time_s">Time:<input type="text" id="time_exerc" name="time_exerc" size="8"></span><!--input mask-->
+					</p>
+				</form>
+				<button id="remove_exercise_btn" class="button" type="button">-Exercise</button>
+			</div>
+			<div id="exercise_end">
+				<button id="add_exercise_btn" class="button" type="button">+Exercise</button>
+			</div>
+		</div>
+		<div id="round_end">
+			<form class="wod_entry">
+				<p>
+				<span id="rnd_time_s">Time of Round:<input type="text" id="time_round" name="time_round" size="8"></span></br><!--input mask-->
+				<button id="add_round_btn" class="button" type="button">Add Round</button>
+				</p>
+			</form>
+		</div>
+		<div id="entry_end" class="wod_entry">
+			<form class="wod_entry">
+				<p>
+					<span id="total_time_s">Total Time:<input type="text" id="total_time" name="total_time" size="8"></span><!--input mask-->
+					<span id="total_reps_s">Total Reps:<input type="number" id="total_reps" name="total_reps" value="0" min="0" max="999"></span>
+					<span id="total_rounds_s">Total Rounds:<input type="number" id="total_rounds" name="total_rounds" value="0" min="0" max="99"></br></span>
+					<textarea id="comment" name="comment" rows="10" cols="48">Comment:</textarea></br>
+					<button id="save_entry_btn" class="button" type="button">Save Entry</button>
+				</p>
+			</form>
+		</div>
+	</div>
+

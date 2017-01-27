@@ -1,0 +1,24 @@
+# Bugliste
+- round delete button wird nicht richtig angzeiegt
+- die ganze runden clonerei ist verbuggt!
+
+# ToDos
+- formular leer sich nicht nach schließen
+
+# Wünsche
+- exercise klonen/kopiere
+- runde klonen/kopieren
+- flexible weite der runden, mit aufrücken und float
+- eintrag in ein exercise-feld setzt die gleichen werte in gleiche felder dahinter, nicht davor
+-Feld für WarmUp
+-Mobilitys
+	- als Übungen im Bereich warmup, cooldown
+	- vom Typ mobility
+	- mobilty art: position, joint, surfaces, muscle dynamics
+	- effekte, kommentare
+	- zeit
+
+# Fragen?
+- Wo kommen die ScalingInofs hin? allgemeine kommentare
+- oder zu den übungen?
+- am ende noch ein Fieldset für kommentare zu den einzelnen übungen, ein feld pro übung

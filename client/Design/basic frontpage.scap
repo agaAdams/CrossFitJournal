@@ -1,0 +1,854 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ScappleDocument Version="1.1" ID="0B16BA54-ABF4-4B8B-8E9D-61189B464FA8">
+    <Notes>
+        <Note ID="1" FontSize="12.0" Position="80.0,483.0" Width="81.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1" Style="Square"></Border>
+                <Fill>0.906773 0.910625 0.634363</Fill>
+            </Appearance>
+            <String>div wod_desc</String>
+        </Note>
+        <Note ID="2" FontSize="12.0" Position="362.0,786.0" Width="44.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+            </Appearance>
+            <String>Month</String>
+            <Formatting>
+                <FormatRange Bold="Yes" Underline="Yes">0,5</FormatRange>
+            </Formatting>
+        </Note>
+        <Note ID="3" FontSize="12.0" Position="1017.0,922.0" Width="59.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1"></Border>
+                <Fill>0.918452 0.807302 0.863467</Fill>
+            </Appearance>
+            <String>klickable</String>
+            <ConnectedNoteIDs>4</ConnectedNoteIDs>
+            <PointsToNoteIDs>4</PointsToNoteIDs>
+            <Formatting>
+                <FormatRange Bold="Yes">0,9</FormatRange>
+            </Formatting>
+        </Note>
+        <Note ID="4" FontSize="12.0" Position="1115.0,923.0" Width="38.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1" Style="Jagged"></Border>
+                <Fill>0.401373 0.688769 0.216559</Fill>
+            </Appearance>
+            <String>event</String>
+            <ConnectedNoteIDs>3</ConnectedNoteIDs>
+        </Note>
+        <Note ID="6" FontSize="12.0" Position="256.0,539.0" Width="104.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1" Style="Square"></Border>
+                <Fill>0.906773 0.910625 0.634363</Fill>
+            </Appearance>
+            <String>Today’s WOD text</String>
+        </Note>
+        <Note ID="9" FontSize="12.0" Position="370.0,347.0" Width="67.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1"></Border>
+                <Fill>0.918452 0.807302 0.863467</Fill>
+            </Appearance>
+            <String>WOD Date</String>
+            <ConnectedNoteIDs>10</ConnectedNoteIDs>
+            <PointsToNoteIDs>10</PointsToNoteIDs>
+            <Formatting>
+                <FormatRange Bold="Yes">0,8</FormatRange>
+            </Formatting>
+        </Note>
+        <Note ID="10" FontSize="12.0" Position="319.0,393.0" Width="200.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1" Style="Jagged"></Border>
+                <Fill>0.401373 0.688769 0.216559</Fill>
+            </Appearance>
+            <String>open crossfit mainsite entry with date in new tab</String>
+            <ConnectedNoteIDs>9</ConnectedNoteIDs>
+        </Note>
+        <Note ID="11" FontSize="12.0" Position="266.0,492.0" Width="74.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1"></Border>
+                <Fill>0.918452 0.807302 0.863467</Fill>
+            </Appearance>
+            <String>WOD Name</String>
+            <ConnectedNoteIDs>12</ConnectedNoteIDs>
+            <PointsToNoteIDs>12</PointsToNoteIDs>
+            <Formatting>
+                <FormatRange Bold="Yes">0,8</FormatRange>
+            </Formatting>
+        </Note>
+        <Note ID="12" FontSize="12.0" Position="402.0,494.0" Width="114.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1" Style="Jagged"></Border>
+                <Fill>0.401373 0.688769 0.216559</Fill>
+            </Appearance>
+            <String>show list of $entries</String>
+            <ConnectedNoteIDs>11, 13-14, 25</ConnectedNoteIDs>
+        </Note>
+        <Note ID="13" FontSize="12.0" Position="552.0,488.0" Width="111.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1" Style="Cloud"></Border>
+            </Appearance>
+            <String>sortable by date, pr</String>
+            <ConnectedNoteIDs>12</ConnectedNoteIDs>
+        </Note>
+        <Note ID="14" FontSize="12.0" Position="246.0,592.0" Width="106.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1"></Border>
+                <Fill>0.918452 0.807302 0.863467</Fill>
+            </Appearance>
+            <String>compare to entry</String>
+            <ConnectedNoteIDs>12</ConnectedNoteIDs>
+            <PointsToNoteIDs>12</PointsToNoteIDs>
+            <Formatting>
+                <FormatRange Bold="Yes">0,16</FormatRange>
+            </Formatting>
+        </Note>
+        <Note ID="22" FontSize="12.0" Position="82.0,843.0" Width="119.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1" Style="Square"></Border>
+                <Fill>0.906773 0.910625 0.634363</Fill>
+            </Appearance>
+            <String>Calender, this month</String>
+            <ConnectedNoteIDs>30, 35</ConnectedNoteIDs>
+        </Note>
+        <Note ID="25" FontSize="12.0" Position="496.0,558.0" Width="38.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1"></Border>
+                <Fill>0.918452 0.807302 0.863467</Fill>
+            </Appearance>
+            <String>entry</String>
+            <ConnectedNoteIDs>12, 26</ConnectedNoteIDs>
+            <PointsToNoteIDs>26</PointsToNoteIDs>
+            <Formatting>
+                <FormatRange Bold="Yes">0,5</FormatRange>
+            </Formatting>
+        </Note>
+        <Note ID="26" FontSize="12.0" Position="579.0,567.0" Width="111.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1" Style="Jagged"></Border>
+                <Fill>0.401373 0.688769 0.216559</Fill>
+            </Appearance>
+            <String>show $entry details</String>
+            <ConnectedNoteIDs>25</ConnectedNoteIDs>
+        </Note>
+        <Note ID="30" FontSize="12.0" Position="247.0,848.0" Width="124.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1"></Border>
+                <Fill>0.918452 0.807302 0.863467</Fill>
+            </Appearance>
+            <String>arrow next to month</String>
+            <ConnectedNoteIDs>22, 31</ConnectedNoteIDs>
+            <PointsToNoteIDs>31</PointsToNoteIDs>
+            <Formatting>
+                <FormatRange Bold="Yes">0,19</FormatRange>
+            </Formatting>
+        </Note>
+        <Note ID="31" FontSize="12.0" Position="428.0,851.0" Width="85.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1" Style="Jagged"></Border>
+                <Fill>0.401373 0.688769 0.216559</Fill>
+            </Appearance>
+            <String>change month</String>
+            <ConnectedNoteIDs>30</ConnectedNoteIDs>
+        </Note>
+        <Note ID="35" FontSize="12.0" Position="242.0,895.0" Width="123.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1" Style="Square"></Border>
+                <Fill>0.906773 0.910625 0.634363</Fill>
+            </Appearance>
+            <String>days in month as grid</String>
+            <ConnectedNoteIDs>22, 36</ConnectedNoteIDs>
+        </Note>
+        <Note ID="36" FontSize="12.0" Position="237.0,946.0" Width="137.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1" Style="Square"></Border>
+                <Fill>0.906773 0.910625 0.634363</Fill>
+            </Appearance>
+            <String>entries per day in month</String>
+            <ConnectedNoteIDs>35, 37</ConnectedNoteIDs>
+        </Note>
+        <Note ID="37" FontSize="12.0" Position="413.0,946.0" Width="38.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1"></Border>
+                <Fill>0.918452 0.807302 0.863467</Fill>
+            </Appearance>
+            <String>entry</String>
+            <ConnectedNoteIDs>36, 38</ConnectedNoteIDs>
+            <PointsToNoteIDs>38</PointsToNoteIDs>
+            <Formatting>
+                <FormatRange Bold="Yes">0,5</FormatRange>
+            </Formatting>
+        </Note>
+        <Note ID="38" FontSize="12.0" Position="510.0,946.0" Width="111.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1" Style="Jagged"></Border>
+                <Fill>0.401373 0.688769 0.216559</Fill>
+            </Appearance>
+            <String>show $entry details</String>
+            <ConnectedNoteIDs>37</ConnectedNoteIDs>
+        </Note>
+        <Note ID="40" FontSize="12.0" Position="862.0,176.0" Width="105.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1"></Border>
+                <Fill>0.918452 0.807302 0.863467</Fill>
+            </Appearance>
+            <String>new entry button</String>
+            <ConnectedNoteIDs>41</ConnectedNoteIDs>
+            <PointsToNoteIDs>41</PointsToNoteIDs>
+            <Formatting>
+                <FormatRange Bold="Yes">0,16</FormatRange>
+            </Formatting>
+        </Note>
+        <Note ID="41" FontSize="12.0" Position="1029.0,174.0" Width="143.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1" Style="Jagged"></Border>
+                <Fill>0.401373 0.688769 0.216559</Fill>
+            </Appearance>
+            <String>show new $entry type list</String>
+            <ConnectedNoteIDs>40</ConnectedNoteIDs>
+        </Note>
+        <Note ID="44" FontSize="28.0" Position="533.0,18.0" Width="268.0">
+            <Appearance></Appearance>
+            <String>My Crossfit Tracker</String>
+            <Formatting>
+                <FormatRange Bold="Yes" Underline="Yes">0,19</FormatRange>
+            </Formatting>
+        </Note>
+        <Note ID="45" FontSize="12.0" Position="326.0,1038.0" Width="88.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+            </Appearance>
+            <String>Latest Entries</String>
+            <Formatting>
+                <FormatRange Bold="Yes" Underline="Yes">0,14</FormatRange>
+            </Formatting>
+        </Note>
+        <Note ID="46" FontSize="12.0" Position="265.0,1081.0" Width="109.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1" Style="Square"></Border>
+                <Fill>0.906773 0.910625 0.634363</Fill>
+            </Appearance>
+            <String>list of WOD entries</String>
+            <ConnectedNoteIDs>47-49</ConnectedNoteIDs>
+        </Note>
+        <Note ID="47" FontSize="12.0" Position="202.0,1131.0" Width="149.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1" Style="Cloud"></Border>
+            </Appearance>
+            <String>sorted by date descending</String>
+            <ConnectedNoteIDs>46</ConnectedNoteIDs>
+        </Note>
+        <Note ID="48" FontSize="12.0" Position="133.0,1104.0" Width="59.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1" Style="Cloud"></Border>
+            </Appearance>
+            <String>scrollable</String>
+            <ConnectedNoteIDs>46</ConnectedNoteIDs>
+        </Note>
+        <Note ID="49" FontSize="12.0" Position="438.0,1083.0" Width="38.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1"></Border>
+                <Fill>0.918452 0.807302 0.863467</Fill>
+            </Appearance>
+            <String>entry</String>
+            <ConnectedNoteIDs>46, 50</ConnectedNoteIDs>
+            <PointsToNoteIDs>50</PointsToNoteIDs>
+            <Formatting>
+                <FormatRange Bold="Yes">0,5</FormatRange>
+            </Formatting>
+        </Note>
+        <Note ID="50" FontSize="12.0" Position="536.0,1084.0" Width="111.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1" Style="Jagged"></Border>
+                <Fill>0.401373 0.688769 0.216559</Fill>
+            </Appearance>
+            <String>show $entry details</String>
+            <ConnectedNoteIDs>49</ConnectedNoteIDs>
+        </Note>
+        <Note ID="53" FontSize="12.0" Position="856.0,917.0" Width="36.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+            </Appearance>
+            <String>label</String>
+            <Formatting>
+                <FormatRange Bold="Yes" Underline="Yes">0,5</FormatRange>
+            </Formatting>
+        </Note>
+        <Note ID="54" FontSize="12.0" Position="1007.0,233.0" Width="32.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+            </Appearance>
+            <String>PRs</String>
+            <Formatting>
+                <FormatRange Bold="Yes" Underline="Yes">0,3</FormatRange>
+            </Formatting>
+        </Note>
+        <Note ID="55" FontSize="12.0" Position="867.0,338.0" Width="69.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+            </Appearance>
+            <String>WODname</String>
+            <Formatting>
+                <FormatRange Bold="Yes" Underline="Yes">0,7</FormatRange>
+            </Formatting>
+        </Note>
+        <Note ID="56" FontSize="12.0" Position="948.0,338.0" Width="149.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1" Style="Square"></Border>
+                <Fill>0.906773 0.910625 0.634363</Fill>
+            </Appearance>
+            <String>entry with best benchmark</String>
+            <ConnectedNoteIDs>57</ConnectedNoteIDs>
+        </Note>
+        <Note ID="57" FontSize="12.0" Position="973.0,383.0" Width="38.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1"></Border>
+                <Fill>0.918452 0.807302 0.863467</Fill>
+            </Appearance>
+            <String>entry</String>
+            <ConnectedNoteIDs>56, 58</ConnectedNoteIDs>
+            <PointsToNoteIDs>58</PointsToNoteIDs>
+            <Formatting>
+                <FormatRange Bold="Yes">0,5</FormatRange>
+            </Formatting>
+        </Note>
+        <Note ID="58" FontSize="12.0" Position="949.0,437.0" Width="114.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1" Style="Jagged"></Border>
+                <Fill>0.401373 0.688769 0.216559</Fill>
+            </Appearance>
+            <String>show list of $entries</String>
+            <ConnectedNoteIDs>57, 67, 71</ConnectedNoteIDs>
+        </Note>
+        <Note ID="59" FontSize="12.0" Position="1053.0,293.0" Width="47.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+            </Appearance>
+            <String>named</String>
+            <Formatting>
+                <FormatRange Bold="Yes" Underline="Yes">0,5</FormatRange>
+            </Formatting>
+        </Note>
+        <Note ID="66" FontSize="12.0" Position="1186.0,919.0" Width="41.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1" Style="Cloud"></Border>
+            </Appearance>
+            <String>option</String>
+        </Note>
+        <Note ID="67" FontSize="12.0" Position="1075.0,389.0" Width="111.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1" Style="Cloud"></Border>
+            </Appearance>
+            <String>sortable by date, pr</String>
+            <ConnectedNoteIDs>58</ConnectedNoteIDs>
+        </Note>
+        <Note ID="71" FontSize="12.0" Position="1102.0,445.0" Width="38.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1"></Border>
+                <Fill>0.918452 0.807302 0.863467</Fill>
+            </Appearance>
+            <String>entry</String>
+            <ConnectedNoteIDs>58, 72</ConnectedNoteIDs>
+            <PointsToNoteIDs>72</PointsToNoteIDs>
+            <Formatting>
+                <FormatRange Bold="Yes">0,5</FormatRange>
+            </Formatting>
+        </Note>
+        <Note ID="72" FontSize="12.0" Position="1170.0,447.0" Width="111.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1" Style="Jagged"></Border>
+                <Fill>0.401373 0.688769 0.216559</Fill>
+            </Appearance>
+            <String>show $entry details</String>
+            <ConnectedNoteIDs>71</ConnectedNoteIDs>
+        </Note>
+        <Note ID="76" FontSize="12.0" Position="871.0,604.0" Width="60.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+            </Appearance>
+            <String>LiftName</String>
+            <Formatting>
+                <FormatRange Bold="Yes" Underline="Yes">0,8</FormatRange>
+            </Formatting>
+        </Note>
+        <Note ID="77" FontSize="12.0" Position="952.0,604.0" Width="147.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1" Style="Square"></Border>
+                <Fill>0.906773 0.910625 0.634363</Fill>
+            </Appearance>
+            <String>entry with heighest weight</String>
+            <ConnectedNoteIDs>78</ConnectedNoteIDs>
+        </Note>
+        <Note ID="78" FontSize="12.0" Position="964.0,663.0" Width="38.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1"></Border>
+                <Fill>0.918452 0.807302 0.863467</Fill>
+            </Appearance>
+            <String>entry</String>
+            <ConnectedNoteIDs>77, 79</ConnectedNoteIDs>
+            <PointsToNoteIDs>79</PointsToNoteIDs>
+            <Formatting>
+                <FormatRange Bold="Yes">0,5</FormatRange>
+            </Formatting>
+        </Note>
+        <Note ID="79" FontSize="12.0" Position="959.0,721.0" Width="114.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1" Style="Jagged"></Border>
+                <Fill>0.401373 0.688769 0.216559</Fill>
+            </Appearance>
+            <String>show list of $entries</String>
+            <ConnectedNoteIDs>78, 81-82</ConnectedNoteIDs>
+        </Note>
+        <Note ID="80" FontSize="12.0" Position="1056.0,559.0" Width="30.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+            </Appearance>
+            <String>lifts</String>
+            <Formatting>
+                <FormatRange Bold="Yes" Underline="Yes">0,5</FormatRange>
+            </Formatting>
+        </Note>
+        <Note ID="81" FontSize="12.0" Position="1101.0,658.0" Width="111.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1" Style="Cloud"></Border>
+            </Appearance>
+            <String>sortable by date, pr</String>
+            <ConnectedNoteIDs>79</ConnectedNoteIDs>
+        </Note>
+        <Note ID="82" FontSize="12.0" Position="1114.0,737.0" Width="38.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1"></Border>
+                <Fill>0.918452 0.807302 0.863467</Fill>
+            </Appearance>
+            <String>entry</String>
+            <ConnectedNoteIDs>79, 83</ConnectedNoteIDs>
+            <PointsToNoteIDs>83</PointsToNoteIDs>
+            <Formatting>
+                <FormatRange Bold="Yes">0,5</FormatRange>
+            </Formatting>
+        </Note>
+        <Note ID="83" FontSize="12.0" Position="1177.0,747.0" Width="111.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1" Style="Jagged"></Border>
+                <Fill>0.401373 0.688769 0.216559</Fill>
+            </Appearance>
+            <String>show $entry details</String>
+            <ConnectedNoteIDs>82</ConnectedNoteIDs>
+        </Note>
+        <Note ID="85" FontSize="12.0" Position="74.0,697.0" Width="146.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1"></Border>
+                <Fill>0.918452 0.807302 0.863467</Fill>
+            </Appearance>
+            <String>Log todays WOD button</String>
+            <ConnectedNoteIDs>86</ConnectedNoteIDs>
+            <PointsToNoteIDs>86</PointsToNoteIDs>
+            <Formatting>
+                <FormatRange Bold="Yes">0,21</FormatRange>
+            </Formatting>
+        </Note>
+        <Note ID="86" FontSize="12.0" Position="319.0,700.0" Width="161.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1" Style="Jagged"></Border>
+                <Fill>0.401373 0.688769 0.216559</Fill>
+            </Appearance>
+            <String>show $new_entry_from_wod</String>
+            <ConnectedNoteIDs>85, 87</ConnectedNoteIDs>
+        </Note>
+        <Note ID="87" FontSize="12.0" Position="556.0,698.0" Width="187.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1" Style="Cloud"></Border>
+            </Appearance>
+            <String>predefined entries by WOD listing</String>
+            <ConnectedNoteIDs>86</ConnectedNoteIDs>
+        </Note>
+        <Note ID="97" FontSize="12.0" Position="51.0,111.0" Width="53.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1" Style="Square"></Border>
+                <Fill>0.906773 0.910625 0.634363</Fill>
+            </Appearance>
+            <String>div main</String>
+        </Note>
+        <Note ID="98" FontSize="12.0" Position="459.0,34.0" Width="68.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1" Style="Square"></Border>
+                <Fill>0.906773 0.910625 0.634363</Fill>
+            </Appearance>
+            <String>title/header</String>
+        </Note>
+        <Note ID="99" FontSize="12.0" Position="62.0,166.0" Width="49.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1" Style="Square"></Border>
+                <Fill>0.906773 0.910625 0.634363</Fill>
+            </Appearance>
+            <String>div wod</String>
+        </Note>
+        <Note ID="102" FontSize="12.0" Position="83.0,664.0" Width="73.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1" Style="Square"></Border>
+                <Fill>0.906773 0.910625 0.634363</Fill>
+            </Appearance>
+            <String>div wod_btn</String>
+        </Note>
+        <Note ID="104" FontSize="12.0" Position="57.0,790.0" Width="73.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1" Style="Square"></Border>
+                <Fill>0.906773 0.910625 0.634363</Fill>
+            </Appearance>
+            <String>div calender</String>
+        </Note>
+        <Note ID="105" FontSize="12.0" Position="65.0,1046.0" Width="99.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1" Style="Square"></Border>
+                <Fill>0.906773 0.910625 0.634363</Fill>
+            </Appearance>
+            <String>div latest_entries</String>
+        </Note>
+        <Note ID="106" FontSize="12.0" Position="851.0,108.0" Width="67.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1" Style="Square"></Border>
+                <Fill>0.906773 0.910625 0.634363</Fill>
+            </Appearance>
+            <String>div sidebar</String>
+        </Note>
+        <Note ID="107" FontSize="12.0" Position="865.0,147.0" Width="99.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1" Style="Square"></Border>
+                <Fill>0.906773 0.910625 0.634363</Fill>
+            </Appearance>
+            <String>div btn_newentry</String>
+        </Note>
+        <Note ID="108" FontSize="12.0" Position="867.0,230.0" Width="50.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1" Style="Square"></Border>
+                <Fill>0.906773 0.910625 0.634363</Fill>
+            </Appearance>
+            <String>div PRs</String>
+        </Note>
+        <Note ID="109" FontSize="12.0" Position="868.0,284.0" Width="93.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1" Style="Square"></Border>
+                <Fill>0.906773 0.910625 0.634363</Fill>
+            </Appearance>
+            <String>div named_PRs</String>
+        </Note>
+        <Note ID="110" FontSize="12.0" Position="873.0,550.0" Width="69.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1" Style="Square"></Border>
+                <Fill>0.906773 0.910625 0.634363</Fill>
+            </Appearance>
+            <String>div lift_PRs</String>
+        </Note>
+        <Note ID="111" FontSize="12.0" Position="265.0,226.0" Width="32.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1"></Border>
+                <Fill>0.918452 0.807302 0.863467</Fill>
+            </Appearance>
+            <String>RXd</String>
+            <ConnectedNoteIDs>112</ConnectedNoteIDs>
+            <PointsToNoteIDs>112</PointsToNoteIDs>
+            <Formatting>
+                <FormatRange Bold="Yes">0,3</FormatRange>
+            </Formatting>
+        </Note>
+        <Note ID="112" FontSize="12.0" Position="208.0,270.0" Width="132.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1" Style="Jagged"></Border>
+                <Fill>0.401373 0.688769 0.216559</Fill>
+            </Appearance>
+            <String>show today’s WOD rXd</String>
+            <ConnectedNoteIDs>111</ConnectedNoteIDs>
+        </Note>
+        <Note ID="113" FontSize="12.0" Position="410.0,221.0" Width="61.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1"></Border>
+                <Fill>0.918452 0.807302 0.863467</Fill>
+            </Appearance>
+            <String>Beginner</String>
+            <ConnectedNoteIDs>114</ConnectedNoteIDs>
+            <PointsToNoteIDs>114</PointsToNoteIDs>
+            <Formatting>
+                <FormatRange Bold="Yes">0,8</FormatRange>
+            </Formatting>
+        </Note>
+        <Note ID="114" FontSize="12.0" Position="580.0,233.0" Width="151.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1" Style="Jagged"></Border>
+                <Fill>0.401373 0.688769 0.216559</Fill>
+            </Appearance>
+            <String>show todays beginner wod</String>
+            <ConnectedNoteIDs>113</ConnectedNoteIDs>
+        </Note>
+        <Note ID="115" FontSize="12.0" Position="313.0,226.0" Width="80.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1"></Border>
+                <Fill>0.918452 0.807302 0.863467</Fill>
+            </Appearance>
+            <String>Intermediate</String>
+            <ConnectedNoteIDs>116</ConnectedNoteIDs>
+            <PointsToNoteIDs>116</PointsToNoteIDs>
+            <Formatting>
+                <FormatRange Bold="Yes">0,12</FormatRange>
+            </Formatting>
+        </Note>
+        <Note ID="116" FontSize="12.0" Position="367.0,269.0" Width="170.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1" Style="Jagged"></Border>
+                <Fill>0.401373 0.688769 0.216559</Fill>
+            </Appearance>
+            <String>show todays intermediate wod</String>
+            <ConnectedNoteIDs>115</ConnectedNoteIDs>
+        </Note>
+        <Note ID="117" FontSize="12.0" Position="77.0,223.0" Width="86.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1" Style="Square"></Border>
+                <Fill>0.906773 0.910625 0.634363</Fill>
+            </Appearance>
+            <String>div wod_menu</String>
+        </Note>
+        <Note ID="121" FontSize="12.0" Position="454.0,347.0" Width="20.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1"></Border>
+                <Fill>0.918452 0.807302 0.863467</Fill>
+            </Appearance>
+            <String>&gt;</String>
+            <ConnectedNoteIDs>123</ConnectedNoteIDs>
+            <PointsToNoteIDs>123</PointsToNoteIDs>
+            <Formatting>
+                <FormatRange Bold="Yes">0,1</FormatRange>
+            </Formatting>
+        </Note>
+        <Note ID="122" FontSize="12.0" Position="330.0,346.0" Width="20.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1"></Border>
+                <Fill>0.918452 0.807302 0.863467</Fill>
+            </Appearance>
+            <String>&lt;</String>
+            <ConnectedNoteIDs>124</ConnectedNoteIDs>
+            <PointsToNoteIDs>124</PointsToNoteIDs>
+            <Formatting>
+                <FormatRange Bold="Yes">0,1</FormatRange>
+            </Formatting>
+        </Note>
+        <Note ID="123" FontSize="12.0" Position="558.0,347.0" Width="87.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1" Style="Jagged"></Border>
+                <Fill>0.401373 0.688769 0.216559</Fill>
+            </Appearance>
+            <String>next wod entry</String>
+            <ConnectedNoteIDs>121</ConnectedNoteIDs>
+        </Note>
+        <Note ID="124" FontSize="12.0" Position="193.0,346.0" Width="87.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1" Style="Jagged"></Border>
+                <Fill>0.401373 0.688769 0.216559</Fill>
+            </Appearance>
+            <String>prev wod entry</String>
+            <ConnectedNoteIDs>122</ConnectedNoteIDs>
+        </Note>
+        <Note ID="127" FontSize="12.0" Position="75.0,335.0" Width="102.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1" Style="Square"></Border>
+                <Fill>0.906773 0.910625 0.634363</Fill>
+            </Appearance>
+            <String>div wod_calender</String>
+        </Note>
+        <Note ID="132" FontSize="12.0" Position="919.0,917.0" Width="31.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1" Style="Square"></Border>
+                <Fill>0.906773 0.910625 0.634363</Fill>
+            </Appearance>
+            <String>field</String>
+        </Note>
+    </Notes>
+    <BackgroundShapes>
+        <Shape ID="130" Sticky="Yes" Position="34.0,96.0" Width="782.0" Height="1098.0">
+            <Appearance>
+                <Border Weight="1"></Border>
+            </Appearance>
+        </Shape>
+        <Shape ID="39" Sticky="Yes" Position="44.0,770.0" Width="762.0" Height="239.058029">
+            <Appearance>
+                <Border Weight="1"></Border>
+            </Appearance>
+        </Shape>
+        <Shape ID="95" Sticky="Yes" Position="837.0,98.0" Width="504.148438" Height="758.0">
+            <Appearance>
+                <Border Weight="1"></Border>
+            </Appearance>
+        </Shape>
+        <Shape ID="52" Sticky="Yes" Position="851.0,139.0" Width="342.0" Height="68.0">
+            <Appearance>
+                <Border Weight="1"></Border>
+            </Appearance>
+        </Shape>
+        <Shape ID="51" Sticky="Yes" Position="44.0,1022.0" Width="762.0" Height="155.0">
+            <Appearance>
+                <Border Weight="1"></Border>
+            </Appearance>
+        </Shape>
+        <Shape ID="93" Sticky="Yes" Position="846.0,218.0" Width="484.148438" Height="611.589844">
+            <Appearance>
+                <Border Weight="1"></Border>
+            </Appearance>
+        </Shape>
+        <Shape ID="74" Sticky="Yes" Position="856.0,267.0" Width="453.609375" Height="241.984375">
+            <Appearance>
+                <Border Weight="1"></Border>
+            </Appearance>
+        </Shape>
+        <Shape ID="75" Sticky="Yes" Position="860.0,533.0" Width="460.148438" Height="280.589844">
+            <Appearance>
+                <Border Weight="1"></Border>
+            </Appearance>
+        </Shape>
+        <Shape ID="129" Sticky="Yes" Position="47.0,151.0" Width="757.0" Height="607.265625">
+            <Appearance>
+                <Border Weight="1"></Border>
+            </Appearance>
+        </Shape>
+        <Shape ID="88" Sticky="Yes" Position="64.0,652.0" Width="723.0" Height="89.265625">
+            <Appearance>
+                <Border Weight="1"></Border>
+            </Appearance>
+        </Shape>
+        <Shape ID="128" Sticky="Yes" Position="59.0,466.0" Width="728.0" Height="164.0">
+            <Appearance>
+                <Border Weight="1"></Border>
+            </Appearance>
+        </Shape>
+        <Shape ID="125" Sticky="Yes" Position="57.0,324.0" Width="736.0" Height="129.0">
+            <Appearance>
+                <Border Weight="1"></Border>
+            </Appearance>
+        </Shape>
+        <Shape ID="131" Sticky="Yes" Position="449.0,6.0" Width="362.0" Height="66.0">
+            <Appearance>
+                <Border Weight="1"></Border>
+            </Appearance>
+        </Shape>
+        <Shape ID="118" Sticky="Yes" Position="61.0,206.0" Width="734.0" Height="107.0">
+            <Appearance>
+                <Border Weight="1"></Border>
+            </Appearance>
+        </Shape>
+    </BackgroundShapes>
+    <AutoFit>1-4, 6, 9, 11-14, 22, 25-26, 30-31, 35-38, 40-41, 44-50, 53-59, 66-67, 71-72, 76-83, 85-87, 97-99, 102, 104-117, 121-124, 127, 132</AutoFit>
+    <NoteStyles>
+        <Style Name="event" ID="8DEBDB7C-4868-4594-A4BA-392334A39720" AffectFontStyle="Yes" AffectAlignment="Yes" AffectTextColor="Yes" AffectNoteBody="Yes" AffectSize="No" AffectFade="No" AffectSticky="Yes">
+            <FontSize>12.0</FontSize>
+            <Alignment>Left</Alignment>
+            <BorderThickness>1</BorderThickness>
+            <BorderStyle>Jagged</BorderStyle>
+            <FillColor>0.401373 0.688769 0.216559</FillColor>
+            <Size>38.0,150.0</Size>
+        </Style>
+        <Style Name="feldtyp" ID="0D85497B-B1E6-4BC0-B847-7C43DA19A136" AffectFontStyle="Yes" AffectAlignment="Yes" AffectTextColor="Yes" AffectNoteBody="Yes" AffectSize="No" AffectFade="Yes" AffectSticky="Yes">
+            <FontSize>12.0</FontSize>
+            <Alignment>Left</Alignment>
+            <BorderThickness>1</BorderThickness>
+            <BorderStyle>Square</BorderStyle>
+            <FillColor>0.906773 0.910625 0.634363</FillColor>
+            <Size>51.0,150.0</Size>
+        </Style>
+        <Style Name="klickable" ID="0647DEA7-718A-4ACA-9C61-41B7D43AC808" AffectFontStyle="Yes" AffectAlignment="Yes" AffectTextColor="Yes" AffectNoteBody="Yes" AffectSize="No" AffectFade="No" AffectSticky="Yes">
+            <FontSize>12.0</FontSize>
+            <Alignment>Left</Alignment>
+            <BorderThickness>1</BorderThickness>
+            <FillColor>0.918452 0.807302 0.863467</FillColor>
+            <Size>59.0,150.0</Size>
+            <IsBold>Yes</IsBold>
+        </Style>
+        <Style Name="label" ID="300E6E9D-FA4D-4C17-B34D-0371FA9BFAD7" AffectFontStyle="Yes" AffectAlignment="Yes" AffectTextColor="Yes" AffectNoteBody="Yes" AffectSize="No" AffectFade="No" AffectSticky="Yes">
+            <FontSize>12.0</FontSize>
+            <Alignment>Left</Alignment>
+            <BorderThickness>0</BorderThickness>
+            <Size>36.0,150.0</Size>
+            <IsBold>Yes</IsBold>
+            <IsUnderlined>Yes</IsUnderlined>
+        </Style>
+        <Style Name="optionen" ID="46762BBC-04E0-4979-B933-DB533EB741F5" AffectFontStyle="Yes" AffectAlignment="Yes" AffectTextColor="Yes" AffectNoteBody="Yes" AffectSize="No" AffectFade="No" AffectSticky="Yes">
+            <FontSize>12.0</FontSize>
+            <Alignment>Left</Alignment>
+            <BorderThickness>1</BorderThickness>
+            <BorderStyle>Cloud</BorderStyle>
+            <Size>113.0,150.0</Size>
+        </Style>
+        <Style Name="Title Text" ID="4C4E0150-E8ED-4B99-808E-A1FADD92107F" AffectFontStyle="Yes" AffectAlignment="Yes" AffectTextColor="No" AffectNoteBody="No" AffectFade="No">
+            <FontSize>28.0</FontSize>
+            <IsBold>Yes</IsBold>
+        </Style>
+    </NoteStyles>
+    <UISettings>
+        <BackgroundColor>0.999737 0.986332 0.931298</BackgroundColor>
+        <DefaultFont>Helvetica</DefaultFont>
+        <DefaultTextColor>0.0 0.0 0.0</DefaultTextColor>
+    </UISettings>
+    <PrintSettings PaperSize="595.0,842.0" LeftMargin="72.0" RightMargin="72.0" TopMargin="90.0" BottomMargin="90.0" PaperType="iso-a4" Orientation="Portrait" HorizontalPagination="Clip" VerticalPagination="Auto" ScaleFactor="1.0" HorizontallyCentered="Yes" VerticallyCentered="Yes" Collates="Yes" PagesAcross="1" PagesDown="1"></PrintSettings>
+</ScappleDocument>

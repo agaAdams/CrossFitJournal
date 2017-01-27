@@ -1,0 +1,14 @@
+[
+	{ "name" : "deadlift", "type" : "lift" },
+	{ "name" : "run", "type" : "endurance" },
+	{ "name" : "pull-up", "type" : "bodyweight" },
+	{ "name" : "air squat", "type" : "bodyweight" },
+	{ "name" : "push-up", "type" : "bodyweight" },
+	{ "name" : "sit-up", "type" : "bodyweight" },
+	{ "name" : "hip-extension", "type" : "bodyweight" },
+	{ "name" : "box squat", "type" : "bodyweight" },
+	{ "name" : "back squat", "type" : "lift" },
+	{ "name" : "front squat", "type" : "lift" },
+	{ "name" : "overhead squat", "type" : "lift" },
+	{ "name" : "row", "type" : "endurance" }
+]

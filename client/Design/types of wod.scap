@@ -1,0 +1,863 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ScappleDocument Version="1.1" ID="F6643000-6674-47B4-8929-3788F2F01448">
+    <Notes>
+        <Note ID="3" FontSize="12.0" Position="628.0,42.0" Width="42.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1">0.477193 0.557066 0.76433</Border>
+                <Fill>0.840969 0.866828 0.925903</Fill>
+            </Appearance>
+            <String>ladder</String>
+        </Note>
+        <Note ID="4" FontSize="12.0" Position="1051.0,38.0" Width="200.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1">0.477193 0.557066 0.76433</Border>
+                <Fill>0.840969 0.866828 0.925903</Fill>
+            </Appearance>
+            <String>rounds for time/as many rounds as possible in time</String>
+        </Note>
+        <Note ID="7" FontSize="12.0" Position="33.0,35.0" Width="118.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1">0.477193 0.557066 0.76433</Border>
+                <Fill>0.840969 0.866828 0.925903</Fill>
+            </Appearance>
+            <String>rounds each for time</String>
+        </Note>
+        <Note ID="8" FontSize="12.0" Position="818.0,415.0" Width="49.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1">0.477193 0.557066 0.76433</Border>
+                <Fill>0.840969 0.866828 0.925903</Fill>
+            </Appearance>
+            <String>weights</String>
+        </Note>
+        <Note ID="9" FontSize="12.0" Position="553.0,75.0" Width="69.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1"></Border>
+            </Appearance>
+            <String>reps ladder</String>
+        </Note>
+        <Note ID="10" FontSize="12.0" Position="665.0,74.0" Width="80.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1"></Border>
+            </Appearance>
+            <String>exercises a-n</String>
+        </Note>
+        <Note ID="11" FontSize="12.0" Position="683.0,105.0" Width="39.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1"></Border>
+            </Appearance>
+            <String>name</String>
+        </Note>
+        <Note ID="12" FontSize="12.0" Position="683.0,133.0" Width="43.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1"></Border>
+            </Appearance>
+            <String>weight</String>
+        </Note>
+        <Note ID="13" FontSize="12.0" Position="683.0,161.0" Width="56.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1"></Border>
+            </Appearance>
+            <String>discance</String>
+        </Note>
+        <Note ID="14" FontSize="12.0" Position="683.0,189.0" Width="24.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1"></Border>
+            </Appearance>
+            <String>cal</String>
+        </Note>
+        <Note ID="15" FontSize="12.0" Position="623.0,224.0" Width="57.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1"></Border>
+            </Appearance>
+            <String>total time</String>
+        </Note>
+        <Note ID="16" FontSize="12.0" Position="623.0,252.0" Width="58.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1"></Border>
+            </Appearance>
+            <String>comment</String>
+        </Note>
+        <Note ID="18" FontSize="12.0" Position="1045.0,77.0" Width="89.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1"></Border>
+            </Appearance>
+            <String>number rounds</String>
+        </Note>
+        <Note ID="19" FontSize="12.0" Position="1178.0,81.0" Width="80.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1"></Border>
+            </Appearance>
+            <String>exercises a-n</String>
+        </Note>
+        <Note ID="20" FontSize="12.0" Position="1178.0,109.0" Width="39.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1"></Border>
+            </Appearance>
+            <String>name</String>
+        </Note>
+        <Note ID="21" FontSize="12.0" Position="1178.0,137.0" Width="43.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1"></Border>
+            </Appearance>
+            <String>weight</String>
+        </Note>
+        <Note ID="22" FontSize="12.0" Position="1178.0,165.0" Width="56.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1"></Border>
+            </Appearance>
+            <String>discance</String>
+        </Note>
+        <Note ID="23" FontSize="12.0" Position="1178.0,193.0" Width="24.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1"></Border>
+            </Appearance>
+            <String>cal</String>
+        </Note>
+        <Note ID="24" FontSize="12.0" Position="1178.0,221.0" Width="32.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1"></Border>
+            </Appearance>
+            <String>reps</String>
+        </Note>
+        <Note ID="25" FontSize="12.0" Position="1052.0,293.0" Width="57.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1"></Border>
+            </Appearance>
+            <String>total time</String>
+        </Note>
+        <Note ID="26" FontSize="12.0" Position="1077.0,334.0" Width="58.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1"></Border>
+            </Appearance>
+            <String>comment</String>
+        </Note>
+        <Note ID="30" FontSize="12.0" Position="882.0,42.0" Width="49.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1">0.477193 0.557066 0.76433</Border>
+                <Fill>0.840969 0.866828 0.925903</Fill>
+            </Appearance>
+            <String>for time</String>
+        </Note>
+        <Note ID="32" FontSize="12.0" Position="924.0,76.0" Width="80.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1"></Border>
+            </Appearance>
+            <String>exercises a-n</String>
+        </Note>
+        <Note ID="33" FontSize="12.0" Position="943.0,107.0" Width="39.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1"></Border>
+            </Appearance>
+            <String>name</String>
+        </Note>
+        <Note ID="34" FontSize="12.0" Position="943.0,135.0" Width="43.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1"></Border>
+            </Appearance>
+            <String>weight</String>
+        </Note>
+        <Note ID="35" FontSize="12.0" Position="943.0,163.0" Width="56.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1"></Border>
+            </Appearance>
+            <String>discance</String>
+        </Note>
+        <Note ID="36" FontSize="12.0" Position="943.0,191.0" Width="24.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1"></Border>
+            </Appearance>
+            <String>cal</String>
+        </Note>
+        <Note ID="37" FontSize="12.0" Position="943.0,219.0" Width="32.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1"></Border>
+            </Appearance>
+            <String>reps</String>
+        </Note>
+        <Note ID="38" FontSize="12.0" Position="886.0,247.0" Width="57.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1"></Border>
+            </Appearance>
+            <String>total time</String>
+        </Note>
+        <Note ID="39" FontSize="12.0" Position="885.0,275.0" Width="58.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1"></Border>
+            </Appearance>
+            <String>comment</String>
+        </Note>
+        <Note ID="44" FontSize="12.0" Position="554.0,407.0" Width="113.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1">0.477193 0.557066 0.76433</Border>
+                <Fill>0.840969 0.866828 0.925903</Fill>
+            </Appearance>
+            <String>rounds of fixed time</String>
+        </Note>
+        <Note ID="45" FontSize="12.0" Position="557.0,440.0" Width="89.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1"></Border>
+            </Appearance>
+            <String>number rounds</String>
+        </Note>
+        <Note ID="46" FontSize="12.0" Position="689.0,444.0" Width="80.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1"></Border>
+            </Appearance>
+            <String>exercises a-n</String>
+        </Note>
+        <Note ID="47" FontSize="12.0" Position="707.0,475.0" Width="39.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1"></Border>
+            </Appearance>
+            <String>name</String>
+        </Note>
+        <Note ID="48" FontSize="12.0" Position="707.0,503.0" Width="43.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1"></Border>
+            </Appearance>
+            <String>weight</String>
+        </Note>
+        <Note ID="49" FontSize="12.0" Position="707.0,531.0" Width="56.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1"></Border>
+            </Appearance>
+            <String>discance</String>
+        </Note>
+        <Note ID="50" FontSize="12.0" Position="708.0,559.0" Width="24.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1"></Border>
+            </Appearance>
+            <String>cal</String>
+        </Note>
+        <Note ID="53" FontSize="12.0" Position="589.0,697.0" Width="58.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1"></Border>
+            </Appearance>
+            <String>comment</String>
+        </Note>
+        <Note ID="54" FontSize="12.0" Position="707.0,587.0" Width="31.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1"></Border>
+            </Appearance>
+            <String>time</String>
+        </Note>
+        <Note ID="55" FontSize="12.0" Position="587.0,664.0" Width="58.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1"></Border>
+            </Appearance>
+            <String>total reps</String>
+        </Note>
+        <Note ID="58" FontSize="12.0" Position="30.0,67.0" Width="89.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1"></Border>
+            </Appearance>
+            <String>number rounds</String>
+        </Note>
+        <Note ID="59" FontSize="12.0" Position="163.0,72.0" Width="80.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1"></Border>
+            </Appearance>
+            <String>exercises a-n</String>
+        </Note>
+        <Note ID="60" FontSize="12.0" Position="181.0,103.0" Width="39.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1"></Border>
+            </Appearance>
+            <String>name</String>
+        </Note>
+        <Note ID="61" FontSize="12.0" Position="181.0,131.0" Width="43.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1"></Border>
+            </Appearance>
+            <String>weight</String>
+        </Note>
+        <Note ID="62" FontSize="12.0" Position="181.0,159.0" Width="56.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1"></Border>
+            </Appearance>
+            <String>discance</String>
+        </Note>
+        <Note ID="63" FontSize="12.0" Position="181.0,187.0" Width="24.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1"></Border>
+            </Appearance>
+            <String>cal</String>
+        </Note>
+        <Note ID="64" FontSize="12.0" Position="54.0,252.0" Width="58.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1"></Border>
+            </Appearance>
+            <String>comment</String>
+        </Note>
+        <Note ID="65" FontSize="12.0" Position="181.0,215.0" Width="31.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1"></Border>
+            </Appearance>
+            <String>time</String>
+        </Note>
+        <Note ID="70" FontSize="12.0" Position="812.0,449.0" Width="89.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1"></Border>
+            </Appearance>
+            <String>number rounds</String>
+        </Note>
+        <Note ID="71" FontSize="12.0" Position="944.0,453.0" Width="80.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1"></Border>
+            </Appearance>
+            <String>exercises a-n</String>
+        </Note>
+        <Note ID="72" FontSize="12.0" Position="962.0,484.0" Width="39.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1"></Border>
+            </Appearance>
+            <String>name</String>
+        </Note>
+        <Note ID="73" FontSize="12.0" Position="962.0,512.0" Width="43.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1"></Border>
+            </Appearance>
+            <String>weight</String>
+        </Note>
+        <Note ID="76" FontSize="12.0" Position="823.0,541.0" Width="58.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1"></Border>
+            </Appearance>
+            <String>comment</String>
+        </Note>
+        <Note ID="78" FontSize="12.0" Position="962.0,540.0" Width="32.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1"></Border>
+            </Appearance>
+            <String>reps</String>
+        </Note>
+        <Note ID="90" FontSize="12.0" Position="27.0,473.0" Width="79.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1"></Border>
+            </Appearance>
+            <String>time of round</String>
+        </Note>
+        <Note ID="91" FontSize="12.0" Position="24.0,439.0" Width="250.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1">0.477193 0.557066 0.76433</Border>
+                <Fill>0.840969 0.866828 0.925903</Fill>
+            </Appearance>
+            <String>rounds with fixed time per round to complete</String>
+        </Note>
+        <Note ID="92" FontSize="12.0" Position="128.0,475.0" Width="80.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1"></Border>
+            </Appearance>
+            <String>exercises a-n</String>
+        </Note>
+        <Note ID="93" FontSize="12.0" Position="129.0,503.0" Width="39.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1"></Border>
+            </Appearance>
+            <String>name</String>
+        </Note>
+        <Note ID="94" FontSize="12.0" Position="129.0,531.0" Width="43.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1"></Border>
+            </Appearance>
+            <String>weight</String>
+        </Note>
+        <Note ID="95" FontSize="12.0" Position="129.0,559.0" Width="56.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1"></Border>
+            </Appearance>
+            <String>discance</String>
+        </Note>
+        <Note ID="96" FontSize="12.0" Position="129.0,587.0" Width="24.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1"></Border>
+            </Appearance>
+            <String>cal</String>
+        </Note>
+        <Note ID="97" FontSize="12.0" Position="129.0,615.0" Width="32.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1"></Border>
+            </Appearance>
+            <String>reps</String>
+        </Note>
+        <Note ID="98" FontSize="12.0" Position="129.0,643.0" Width="31.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1"></Border>
+            </Appearance>
+            <String>time</String>
+        </Note>
+        <Note ID="104" FontSize="12.0" Position="31.0,104.0" Width="79.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1"></Border>
+            </Appearance>
+            <String>time of round</String>
+        </Note>
+        <Note ID="105" FontSize="12.0" Position="340.0,37.0" Width="111.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1">0.477193 0.557066 0.76433</Border>
+                <Fill>0.840969 0.866828 0.925903</Fill>
+            </Appearance>
+            <String>as long as possible</String>
+        </Note>
+        <Note ID="106" FontSize="12.0" Position="308.0,83.0" Width="89.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1"></Border>
+            </Appearance>
+            <String>number rounds</String>
+        </Note>
+        <Note ID="107" FontSize="12.0" Position="305.0,126.0" Width="79.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1"></Border>
+            </Appearance>
+            <String>time of round</String>
+        </Note>
+        <Note ID="109" FontSize="12.0" Position="418.0,81.0" Width="80.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1"></Border>
+            </Appearance>
+            <String>exercises a-n</String>
+        </Note>
+        <Note ID="110" FontSize="12.0" Position="419.0,109.0" Width="39.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1"></Border>
+            </Appearance>
+            <String>name</String>
+        </Note>
+        <Note ID="111" FontSize="12.0" Position="419.0,137.0" Width="43.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1"></Border>
+            </Appearance>
+            <String>weight</String>
+        </Note>
+        <Note ID="112" FontSize="12.0" Position="419.0,165.0" Width="56.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1"></Border>
+            </Appearance>
+            <String>discance</String>
+        </Note>
+        <Note ID="113" FontSize="12.0" Position="419.0,193.0" Width="24.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1"></Border>
+            </Appearance>
+            <String>cal</String>
+        </Note>
+        <Note ID="114" FontSize="12.0" Position="419.0,221.0" Width="32.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1"></Border>
+            </Appearance>
+            <String>reps</String>
+        </Note>
+        <Note ID="115" FontSize="12.0" Position="328.0,244.0" Width="57.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1"></Border>
+            </Appearance>
+            <String>total time</String>
+        </Note>
+        <Note ID="116" FontSize="12.0" Position="327.0,272.0" Width="58.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1"></Border>
+            </Appearance>
+            <String>comment</String>
+        </Note>
+        <Note ID="119" FontSize="12.0" Position="349.0,585.0" Width="45.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1">0.477193 0.557066 0.76433</Border>
+                <Fill>0.840969 0.866828 0.925903</Fill>
+            </Appearance>
+            <String>Tabata</String>
+        </Note>
+        <Note ID="120" FontSize="12.0" Position="355.0,808.0" Width="57.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1"></Border>
+            </Appearance>
+            <String>total time</String>
+        </Note>
+        <Note ID="121" FontSize="12.0" Position="354.0,841.0" Width="58.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1"></Border>
+            </Appearance>
+            <String>comment</String>
+        </Note>
+        <Note ID="122" FontSize="12.0" Position="422.0,627.0" Width="80.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1"></Border>
+            </Appearance>
+            <String>exercises a-n</String>
+        </Note>
+        <Note ID="123" FontSize="12.0" Position="422.0,655.0" Width="39.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1"></Border>
+            </Appearance>
+            <String>name</String>
+        </Note>
+        <Note ID="124" FontSize="12.0" Position="422.0,683.0" Width="43.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1"></Border>
+            </Appearance>
+            <String>weight</String>
+        </Note>
+        <Note ID="125" FontSize="12.0" Position="422.0,711.0" Width="56.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1"></Border>
+            </Appearance>
+            <String>discance</String>
+        </Note>
+        <Note ID="126" FontSize="12.0" Position="422.0,739.0" Width="24.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1"></Border>
+            </Appearance>
+            <String>cal</String>
+        </Note>
+        <Note ID="127" FontSize="12.0" Position="422.0,767.0" Width="32.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1"></Border>
+            </Appearance>
+            <String>reps</String>
+        </Note>
+        <Note ID="128" FontSize="12.0" Position="329.0,628.0" Width="89.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1"></Border>
+            </Appearance>
+            <String>number rounds</String>
+        </Note>
+        <Note ID="133" FontSize="12.0" Position="1419.0,35.0" Width="55.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1">0.477193 0.557066 0.76433</Border>
+                <Fill>0.840969 0.866828 0.925903</Fill>
+            </Appearance>
+            <String>free/max</String>
+        </Note>
+        <Note ID="134" FontSize="12.0" Position="1347.0,86.0" Width="89.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1"></Border>
+            </Appearance>
+            <String>number rounds</String>
+        </Note>
+        <Note ID="135" FontSize="12.0" Position="1348.0,115.0" Width="79.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1"></Border>
+            </Appearance>
+            <String>time of round</String>
+        </Note>
+        <Note ID="136" FontSize="12.0" Position="1457.0,84.0" Width="80.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1"></Border>
+            </Appearance>
+            <String>exercises a-n</String>
+        </Note>
+        <Note ID="137" FontSize="12.0" Position="1457.0,112.0" Width="39.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1"></Border>
+            </Appearance>
+            <String>name</String>
+        </Note>
+        <Note ID="138" FontSize="12.0" Position="1457.0,140.0" Width="43.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1"></Border>
+            </Appearance>
+            <String>weight</String>
+        </Note>
+        <Note ID="139" FontSize="12.0" Position="1457.0,168.0" Width="56.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1"></Border>
+            </Appearance>
+            <String>discance</String>
+        </Note>
+        <Note ID="140" FontSize="12.0" Position="1457.0,196.0" Width="24.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1"></Border>
+            </Appearance>
+            <String>cal</String>
+        </Note>
+        <Note ID="141" FontSize="12.0" Position="1457.0,224.0" Width="32.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1"></Border>
+            </Appearance>
+            <String>reps</String>
+        </Note>
+        <Note ID="142" FontSize="12.0" Position="1347.0,315.0" Width="57.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1"></Border>
+            </Appearance>
+            <String>total time</String>
+        </Note>
+        <Note ID="143" FontSize="12.0" Position="1346.0,343.0" Width="58.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1"></Border>
+            </Appearance>
+            <String>comment</String>
+        </Note>
+        <Note ID="144" FontSize="12.0" Position="1457.0,252.0" Width="31.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1"></Border>
+            </Appearance>
+            <String>time</String>
+        </Note>
+        <Note ID="145" FontSize="12.0" Position="1348.0,372.0" Width="58.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1"></Border>
+            </Appearance>
+            <String>total reps</String>
+        </Note>
+        <Note ID="146" FontSize="12.0" Position="313.0,321.0" Width="200.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1" Style="Square"></Border>
+                <Fill>0.906773 0.910625 0.634363</Fill>
+            </Appearance>
+            <String>Every 2 minutes for as long as possible complete:
+From 0:00-2:00
+   15-ft. rope climbs, 2 ascents
+   185-lb. front squats, 2 reps
+From 2:00-4:00
+   15-ft. rope climbs, 2 ascents
+   185-lb. front squats, 4 reps
+From 4:00-6:00
+   15-ft. rope climbs, 2 ascents
+   185-lb. front squats, 6 reps
+Continue adding 2 reps to the front squat each interval for as long as you are able.
+Post number of minutes completed to comments.</String>
+            <Formatting>
+                <FormatRange Italic="Yes">50,14</FormatRange>
+                <FormatRange Italic="Yes">130,14</FormatRange>
+                <FormatRange Italic="Yes">210,14</FormatRange>
+            </Formatting>
+        </Note>
+        <Note ID="147" FontSize="12.0" Position="18.0,305.0" Width="200.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1" Style="Square"></Border>
+                <Fill>0.906773 0.910625 0.634363</Fill>
+            </Appearance>
+            <String>5 rounds, each for time, of:
+Run 800 meters
+Rest 3 minutes
+Post time for each interval to comments.</String>
+        </Note>
+        <Note ID="148" FontSize="12.0" Position="24.0,699.0" Width="200.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1" Style="Square"></Border>
+                <Fill>0.906773 0.910625 0.634363</Fill>
+            </Appearance>
+            <String>Nukes
+8 minutes to complete:
+1-mile run
+315-lb. deadlifts, max reps
+Then, 10 minutes to complete:
+1-mile run
+225-lb. power cleans, max reps
+Then, 12 minutes to complete:
+1-mile run
+135-lb. overhead squats, max reps
+Do not rest between rounds. Post run times and reps completed for each exercise to comments.</String>
+            <Formatting>
+                <FormatRange Bold="Yes">0,5</FormatRange>
+            </Formatting>
+        </Note>
+    </Notes>
+    <BackgroundShapes>
+        <Shape ID="17" Sticky="Yes" Position="543.0,26.0" Width="213.0" Height="266.0">
+            <Appearance>
+                <Border Weight="1"></Border>
+            </Appearance>
+        </Shape>
+        <Shape ID="27" Sticky="Yes" Position="1034.0,30.0" Width="235.0" Height="334.144897">
+            <Appearance>
+                <Border Weight="1"></Border>
+            </Appearance>
+        </Shape>
+        <Shape ID="29" Sticky="Yes" Position="781.0,25.0" Width="235.0" Height="289.0">
+            <Appearance>
+                <Border Weight="1"></Border>
+            </Appearance>
+        </Shape>
+        <Shape ID="42" Sticky="Yes" Position="546.0,393.0" Width="235.0" Height="334.144897">
+            <Appearance>
+                <Border Weight="1"></Border>
+            </Appearance>
+        </Shape>
+        <Shape ID="56" Sticky="Yes" Position="19.0,21.0" Width="235.0" Height="270.301147">
+            <Appearance>
+                <Border Weight="1"></Border>
+            </Appearance>
+        </Shape>
+        <Shape ID="69" Sticky="Yes" Position="800.0,402.0" Width="235.0" Height="181.818893">
+            <Appearance>
+                <Border Weight="1"></Border>
+            </Appearance>
+        </Shape>
+        <Shape ID="100" Sticky="Yes" Position="13.0,423.0" Width="272.0" Height="260.0">
+            <Appearance>
+                <Border Weight="1"></Border>
+            </Appearance>
+        </Shape>
+        <Shape ID="117" Sticky="Yes" Position="294.0,21.0" Width="215.0" Height="291.0">
+            <Appearance>
+                <Border Weight="1"></Border>
+            </Appearance>
+        </Shape>
+        <Shape ID="129" Sticky="Yes" Position="322.0,569.0" Width="186.0" Height="313.0">
+            <Appearance>
+                <Border Weight="1"></Border>
+            </Appearance>
+        </Shape>
+        <Shape ID="132" Sticky="Yes" Position="1333.0,24.0" Width="245.0" Height="387.022736">
+            <Appearance>
+                <Border Weight="1"></Border>
+            </Appearance>
+        </Shape>
+    </BackgroundShapes>
+    <Stacks>
+        <Stack>11-14</Stack>
+        <Stack>15-16</Stack>
+        <Stack>19-24</Stack>
+        <Stack>33-37</Stack>
+        <Stack>47-49</Stack>
+        <Stack>60-63, 65</Stack>
+        <Stack>72-73, 78</Stack>
+        <Stack>93-98</Stack>
+        <Stack>110-114</Stack>
+        <Stack>122-127</Stack>
+        <Stack>136-141, 144</Stack>
+    </Stacks>
+    <AutoFit>3, 7-16, 18-26, 30, 32-39, 44-50, 53-55, 58-65, 70-73, 76, 78, 90, 92-98, 100, 104-107, 109-117, 119-128, 133-145</AutoFit>
+    <NoteStyles>
+        <Style Name="Blue Bubble" ID="9B9F43AD-47E6-4D12-BDB0-ED55974EDEDA" AffectFontStyle="No" AffectAlignment="No" AffectTextColor="No" AffectNoteBody="Yes" AffectFade="No">
+            <BorderThickness>1</BorderThickness>
+            <BorderColor>0.477193 0.557066 0.76433</BorderColor>
+            <FillColor>0.840969 0.866828 0.925903</FillColor>
+        </Style>
+        <Style Name="Brown Bubble" ID="9DAC3026-9093-48B8-8C8E-6A78C0C48BA6" AffectFontStyle="No" AffectAlignment="No" AffectTextColor="No" AffectNoteBody="Yes" AffectFade="No">
+            <BorderThickness>1</BorderThickness>
+            <BorderColor>0.290055 0.1523 0.182215</BorderColor>
+            <FillColor>0.940019 0.892907 0.779716</FillColor>
+        </Style>
+        <Style Name="Green Bubble" ID="F69FAB1C-0763-43F8-9FE6-159A4BD9856A" AffectFontStyle="No" AffectAlignment="No" AffectTextColor="No" AffectNoteBody="Yes" AffectFade="No">
+            <BorderThickness>1</BorderThickness>
+            <BorderColor>0.331867 0.609932 0.356197</BorderColor>
+            <FillColor>0.790123 0.882328 0.80198</FillColor>
+        </Style>
+        <Style Name="Pink Bubble" ID="1C4EE8BD-6BCA-44DF-A992-9D5929A23A5A" AffectFontStyle="No" AffectAlignment="No" AffectTextColor="No" AffectNoteBody="Yes" AffectFade="No">
+            <BorderThickness>1</BorderThickness>
+            <BorderColor>0.747881 0.366532 0.542813</BorderColor>
+            <FillColor>0.918452 0.807302 0.863467</FillColor>
+        </Style>
+        <Style Name="Red Text" ID="0C57315D-4285-4D1B-87F7-0BECF8532C8C" AffectFontStyle="No" AffectAlignment="No" AffectTextColor="Yes" AffectNoteBody="No" AffectFade="No">
+            <TextColor>1.0 0.0 0.0</TextColor>
+        </Style>
+        <Style Name="Title Text" ID="BE2B2B85-7524-4E03-B65E-D620EEC55862" AffectFontStyle="Yes" AffectAlignment="Yes" AffectTextColor="No" AffectNoteBody="No" AffectFade="No">
+            <FontSize>28.0</FontSize>
+            <IsBold>Yes</IsBold>
+        </Style>
+        <Style Name="Yellow Bubble" ID="D312B70A-90D2-4FD2-B487-130B03E1BB0E" AffectFontStyle="No" AffectAlignment="No" AffectTextColor="No" AffectNoteBody="Yes" AffectFade="No">
+            <BorderThickness>1</BorderThickness>
+            <BorderColor>0.756763 0.785592 0.373258</BorderColor>
+            <FillColor>0.906773 0.910625 0.634363</FillColor>
+        </Style>
+    </NoteStyles>
+    <UISettings>
+        <BackgroundColor>0.999737 0.986332 0.931298</BackgroundColor>
+        <DefaultFont>Helvetica</DefaultFont>
+        <DefaultTextColor>0.0 0.0 0.0</DefaultTextColor>
+    </UISettings>
+    <PrintSettings PaperSize="595.0,842.0" LeftMargin="72.0" RightMargin="72.0" TopMargin="90.0" BottomMargin="90.0" PaperType="iso-a4" Orientation="Portrait" HorizontalPagination="Clip" VerticalPagination="Auto" ScaleFactor="1.0" HorizontallyCentered="Yes" VerticallyCentered="Yes" Collates="Yes" PagesAcross="1" PagesDown="1"></PrintSettings>
+</ScappleDocument>
