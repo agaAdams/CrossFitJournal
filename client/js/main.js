@@ -10,7 +10,7 @@ var days = 0;
 var $exerciseFieldset = '<fieldset id="exercise_fs" class="exercise_fs"><legend>E</legend><button id="remove_exercise_btn" class="remove_exercise_btn" class="button" type="button">-E</button></fieldset>'
 var dialogPresets = {
   autoOpen: false,
-  height: 850,
+  height: "auto",
   width: 680,
   modal: true,
   position: { my: "center", at: "top" },
@@ -162,6 +162,13 @@ $(document).on('click', '#remove_exercise_btn', function() {
   $(this).parent().remove();
 });
 
+//Eintragsfenster schließen
+$(dialog_entry).on( "dialogclose", function() {
+
+  clearEntryDialog();
+} );
+
+
 //Daten aus dem Fenster sammeln
 $(document).on('click', '#save_entry_btn', function() {
 
@@ -193,13 +200,7 @@ $(document).on('click', '#save_entry_btn', function() {
   // $(".exerciselist").remove();
   // getExerciseList();
 
-  //setzt die Eingabemaske zurück
-  //leer die Formularfelder
-  $("#wod_entry_form").trigger("reset");
-  //löscht alle Boxen für Übungen
-  $("#exercises_grp").children().remove();
-  //setzt das WOD-Datum auf heute zurück
-  setDateInputs();
+  clearEntryDialog();
 
   //schließt die Eingabemaske
   dialog_entry.dialog("close");
@@ -309,4 +310,14 @@ function setDateInputs() {
     $("#entry_date").datepicker();
     $("#entry_date").val(getDate("de", 0));
   }
+}
+
+//setzt die Eingabemaske für den WOD-Eitnrag zurück
+function clearEntryDialog() {
+  //leer die Formularfelder
+  $("#wod_entry_form").trigger("reset");
+  //löscht alle Boxen für Übungen
+  $("#exercises_grp").children().remove();
+  //setzt das WOD-Datum auf heute zurück
+  setDateInputs();
 }
