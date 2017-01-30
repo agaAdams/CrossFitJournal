@@ -34,14 +34,33 @@ dialog_type.dialog({title: "Choose your WOD-Type"});
 
 //overlay zum Eintragen der WOD Daten
 dialog_entry = $( "#modal_wod_entry" ).dialog(dialogPresets);
-dialog_entry.dialog({title: "Enter your WOD data"});
+dialog_entry.dialog({title: "Enter your WOD data", dialogClass: "no-close"});
 
 //overlay zur Übungsauswahl
 dialog_exercise = $("#exerciseChoice").dialog(dialogPresets);
 dialog_exercise.dialog({title: "Choose an exercise"});
 
+//overlay zur Eingabe einer neuen Übung
 dialog_add_exercise = $("#newExerciseEntry").dialog(dialogPresets);
 dialog_add_exercise.dialog({title: "Add a new exercise"});
+
+dialog_confirm = $("#dialog_confirm").dialog(dialogPresets);
+dialog_confirm.dialog({
+  width: "auto",
+  buttons: {
+          Cancel: function() {
+            $( this ).dialog( "close" );
+          },
+          Discard: function() {
+            $( this ).dialog( "close" );
+            //schließt die Eingabemaske
+            dialog_entry.dialog("close");
+            clearEntryDialog();
+          }
+        }
+      });
+
+
 
 //--------------------------------------------------------
 //-------------Ende der Startfunktionen JQuery------------
@@ -163,9 +182,9 @@ $(document).on('click', '#remove_exercise_btn', function() {
 });
 
 //Eintragsfenster schließen
-$(dialog_entry).on( "dialogclose", function() {
-
-  clearEntryDialog();
+$(document).on( "click", "#discard_entry_btn", function() {
+  dialog_confirm.dialog("open");
+  // clearEntryDialog();
 } );
 
 
