@@ -106,29 +106,36 @@ $(document).on('click', '#create_exercise_btn', function() {
 
 //neue Übung abspeichern
 $(document).on('click', '#save_exercise_btn', function() {
-  $(".alert").remove();
-  var name = $("#exerciseName").val(),
+  //Entfernt vorhergehende Nachrichten
+  $("#alert").remove();
+
+//erstellt ein Objekt für den Exercise-Eintrag
+  var message, name = $("#exerciseName").val(),
     type = $("#exerciseTypeDD").val(),
     newExercise = {name, type};
 
+//prüft, ob es einen Eintrag mit dem Namen bereits gibt
   $.getJSON("/exercises.json", function (exerciseList) {
+    //ein Array aus Objekten, die einen solchen Namen bereits haben wird erstellt
     var result = $.grep(exerciseList, function(exercise){
       return exercise.name == name;
     });
 
+//falls es ein solches Objekt nicht gibt, wird es in die DB eingetragen
     if (result.length == 0) {
       $.post("exercises", newExercise, function (result) {});
-      $("#exerciseTypeDD").after("<p class='alert'>");
-      var message = name + " saved";
-      $(".alert").text(message);
+      message = name + " saved";
       $("#exerciseName").val("");
     }
+    //falls es das gibt, erscheint nur eine entsprechende Meldung
     else {
-      $("#exerciseTypeDD").after("<p class='alert'>");
-      var message = "There is already an entry for " + name;
-      $(".alert").text(message);
+      message = name + " already exists";
     }
+
+    $("#exerciseTypeDD").after("<span id='alert'>");
+    $("#alert").text(message);
   });
+
 
   // $(".exerciselist").remove();
   // getExerciseList();
