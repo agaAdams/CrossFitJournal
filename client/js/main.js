@@ -44,6 +44,7 @@ dialog_exercise.dialog({title: "Choose an exercise"});
 dialog_add_exercise = $("#newExerciseEntry").dialog(dialogPresets);
 dialog_add_exercise.dialog({title: "Add a new exercise"});
 
+//Bestätigungsdialog zum Verwerfen eines WOD-Eintrags
 dialog_confirm = $("#dialog_confirm").dialog(dialogPresets);
 dialog_confirm.dialog({
   width: "auto",
@@ -58,9 +59,7 @@ dialog_confirm.dialog({
             clearEntryDialog();
           }
         }
-      });
-
-
+});
 
 //--------------------------------------------------------
 //-------------Ende der Startfunktionen JQuery------------
@@ -105,13 +104,39 @@ $(document).on('click', '#create_exercise_btn', function() {
 	// getExerciseList();
 });
 
+//neue Übung abspeichern
 $(document).on('click', '#save_exercise_btn', function() {
-var name = $("#exerciseName").val(),
-  type = $("#exerciseTypeDD").val(),
-  newExercise = {name, type};
+  //Entfernt vorhergehende Nachrichten
+  $("#alert").remove();
 
-	$.post("exercises", newExercise, function (result) {
+//erstellt ein Objekt für den Exercise-Eintrag
+  var message, name = $("#exerciseName").val(),
+    type = $("#exerciseTypeDD").val(),
+    newExercise = {name, type};
+
+//prüft, ob es einen Eintrag mit dem Namen bereits gibt
+  $.getJSON("/exercises.json", function (exerciseList) {
+    //ein Array aus Objekten, die einen solchen Namen bereits haben wird erstellt
+    var result = $.grep(exerciseList, function(exercise){
+      return exercise.name == name;
+    });
+
+//falls es ein solches Objekt nicht gibt, wird es in die DB eingetragen
+    if (result.length == 0) {
+      $.post("exercises", newExercise, function (result) {});
+      message = name + " saved";
+      $("#exerciseName").val("");
+    }
+    //falls es das gibt, erscheint nur eine entsprechende Meldung
+    else {
+      message = name + " already exists";
+    }
+
+    $("#exerciseTypeDD").after("<span id='alert'>");
+    $("#alert").text(message);
   });
+
+
   // $(".exerciselist").remove();
   // getExerciseList();
 });
