@@ -181,7 +181,8 @@
     			    <input type="time" id="entry_time" name="entry_time" step="1" min="00:00:00" max="00:59:59" value="00:00:00">total time
     			    <input type="number" id="entry_rounds" name="entry_rounds" value="0" min="0" max="99">total rounds
 					<textarea id="entry_comment" name="entry_comment" placeholder="WOD comments"></textarea>
-					<button id="save_entry_btn" class="button" type="button">Save Entry</button>
+					<button id="save_entry_btn" type="button">Save Entry</button>
+					<button id="discard_entry_btn" type="button">Discard Entry</button>
 
     			</fieldset>
     		</form>
@@ -208,6 +209,12 @@
     		<h3>Exercise List</h3>	
     	</div>
     	</div>
+
+    	<!-- modal popup confirmation on close entry window -->
+    	<div id="dialog_confirm" title="Discard WOD?">
+    	  <p>Do you want to discard all entries?</p>
+    	</div>
+
 	<!--scripts-->
 		<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
 		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>

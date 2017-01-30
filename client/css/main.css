@@ -231,6 +231,11 @@ input, textarea {
     border: 1px solid #657b83;
     margin: 5px;
 }
+
+.no-close .ui-dialog-titlebar-close {
+  display: none;
+}
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
