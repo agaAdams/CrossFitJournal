@@ -178,6 +178,10 @@ $(document).on('click', '#add_round_btn', function() {
   $("#entry_rounds").val(function(i, oldval) {
     return ++oldval;
   });
+
+  //RundenLöschButtons sichtbar machen
+  $(".remove_round_btn").css({"display": "inline"});
+
 });
 
 //Übung auswählen
@@ -222,12 +226,19 @@ $(document).on('click', '#remove_exercise_btn', function() {
 //Runde löschen
 $(document).on('click', '#remove_round_btn', function() {
   $(this).parent().remove();
+  //der Rundenzähler wird runtergesetzt
+  $("#entry_rounds").val(function(i, oldval) {
+    return --oldval;
+  });
+  //falls es nur noch eine Runde gibt, wird der RundeLöschButton versteckt
+  if ($(".round_fs").length < 2) {
+    $(".remove_round_btn").css({"display": "none"});
+  }
 });
 
 //Eintragsfenster schließen
 $(document).on( "click", "#discard_entry_btn", function() {
   dialog_confirm.dialog("open");
-  // clearEntryDialog();
 } );
 
 
