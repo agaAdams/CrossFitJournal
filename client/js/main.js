@@ -170,6 +170,14 @@ $(document).on('click', '#add_exercise_btn', function() {
   getExerciseList($(this).attr("id"));
 });
 
+//neue Runde zum WOD-Eintrag hinzufügen
+$(document).on('click', '#add_round_btn', function() {
+  //der letzte Rundeneintrag wird geklont und hinter diesem eingefügt
+  $(".round_fs").last().clone().insertAfter($(".round_fs").last());
+  //der Rundenzähler wird hochgesetzt
+  
+});
+
 //Übung auswählen
 $(document).on("click", ".exerciselist", function() {
   var $fs = $exerciseFieldset,
