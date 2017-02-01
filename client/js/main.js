@@ -7,7 +7,7 @@ var main = function () {
 var days = 0;
 
 //------------Globale Objekte--------------------------
-var $exerciseFieldset = '<fieldset id="exercise_fs" class="exercise_fs"><legend>E</legend><button id="remove_exercise_btn" class="remove_exercise_btn" class="button" type="button">-E</button></fieldset>'
+var $exerciseFieldset = '<fieldset id="exercise_fs" class="exercise_fs"><legend>E</legend><button id="remove_exercise_btn" class="remove_exercise_btn" type="button">-E</button></fieldset>'
 var dialogPresets = {
   autoOpen: false,
   height: "auto",
@@ -175,7 +175,9 @@ $(document).on('click', '#add_round_btn', function() {
   //der letzte Rundeneintrag wird geklont und hinter diesem eingefügt
   $(".round_fs").last().clone().insertAfter($(".round_fs").last());
   //der Rundenzähler wird hochgesetzt
-  
+  $("#entry_rounds").val(function(i, oldval) {
+    return ++oldval;
+  });
 });
 
 //Übung auswählen
@@ -214,6 +216,11 @@ $(document).on("click", ".exerciselist", function() {
 
 //Übung löschen
 $(document).on('click', '#remove_exercise_btn', function() {
+  $(this).parent().remove();
+});
+
+//Runde löschen
+$(document).on('click', '#remove_round_btn', function() {
   $(this).parent().remove();
 });
 
