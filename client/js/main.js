@@ -99,12 +99,13 @@ $( "#new_entry_btn" ).button().on( "click", function() {
 
 //Button "create new exercise"
 $(document).on('click', '#create_exercise_btn', function() {
-	dialog_add_exercise.dialog("open");
+	//öffnet die Dialogmaske und erneuert die Liste der Übungen
+  dialog_add_exercise.dialog("open");
   $(".exerciselist").remove();
 	getExerciseList($(this).attr("id"));
 });
 
-//neue Übung abspeichern
+//neu erstelle Übung abspeichern
 $(document).on('click', '#save_exercise_btn', function() {
   //Entfernt vorhergehende Nachrichten
   $("#alert").remove();
@@ -126,6 +127,11 @@ $(document).on('click', '#save_exercise_btn', function() {
       $.post("exercises", newExercise, function (result) {});
       message = name + " saved";
       $("#exerciseName").val("");
+
+      //lädt die Übungsliste neu
+      $(".exerciselist").remove();
+      getExerciseList("create_exercise_btn");
+
     }
     //falls es das gibt, erscheint nur eine entsprechende Meldung
     else {
@@ -135,10 +141,6 @@ $(document).on('click', '#save_exercise_btn', function() {
     $("#exerciseTypeDD").after("<span id='alert'>");
     $("#alert").text(message);
   });
-
-
-  // $(".exerciselist").remove();
-  // getExerciseList();
 });
 
 //------------------Overlays-----------------------------
@@ -160,10 +162,11 @@ $("#dist_einheit").button().on( "click", function() {
   }
 });
 
-//neue Übung hinzufügen
+//neue Übung zum WOD-Eintrag hinzufügen
 $(document).on('click', '#add_exercise_btn', function() {
-  $(".exerciselist").remove();
+  //öffnet die Übungsliste und lädt sie neu
   dialog_exercise.dialog("open");
+  $(".exerciselist").remove();
   getExerciseList($(this).attr("id"));
 });
 
@@ -241,8 +244,6 @@ $(document).on('click', '#save_entry_btn', function() {
 
   $.post("entries", newEntry, function (result) {
   });
-  // $(".exerciselist").remove();
-  // getExerciseList();
 
   clearEntryDialog();
 
@@ -313,9 +314,11 @@ function getExerciseList(sender) {
 
       //je nach sender die Liste ins DOM einfügen
       if (sender == "add_exercise_btn") {
+        //zur Liste für den WOD-Eintrag
         $("#exerciseChoice").append($exerciseEntry);
       }
       else if (sender == "create_exercise_btn") {
+        //zur Liste für das erstellen neuer Übungen
         $("#exerciseList").append($exerciseEntry);
       }
     });
