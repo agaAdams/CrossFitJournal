@@ -168,6 +168,7 @@ $(document).on('click', '#add_exercise_btn', function() {
   dialog_exercise.dialog("open");
   $(".exerciselist").remove();
   getExerciseList($(this).attr("id"));
+  $(this).addClass("pressed");
 });
 
 //neue Runde zum WOD-Eintrag hinzufügen
@@ -193,29 +194,32 @@ $(document).on("click", ".exerciselist", function() {
   $caloriesInput = '<input type="number" id="ex_cal" name="ex_cal" value="0" min="0" max="999">cal',
   $exerciseTimeInput = '<input type="time" id="ex_time" name="ex_time" step="1" min="00:00:00" max="00:59:59" value="00:00:00">';
 
+  //die richtige Runde finden
+  var $group = $(".pressed").prev();
+
   //Fieldset exercise mit titel einfügen
-  $("#exercises_grp").children().last().css({"float":"left", "margin-left":"5px"});
-  $("#exercises_grp").append($fs);
-  $("#exercises_grp").children().last().children().first().text($(this).text());
+  $($group).children().last().css({"float":"left", "margin-left":"5px"});
+  $($group).append($fs);
+  $($group).children().last().children().first().text($(this).text());
 
 //je nach Übungstyp felder setzen
   if($(this).hasClass("lift")){
-    $("#exercises_grp").children().last().children().last().before($weightInput);
-    $("#exercises_grp").children().last().children().last().before($repsInput);
+    $($group).children().last().children().last().before($weightInput);
+    $($group).children().last().children().last().before($repsInput);
   }
   else if ($(this).hasClass("bodyweight")) {
-    $("#exercises_grp").children().last().children().last().before($repsInput);
-    $("#exercises_grp").children().last().children().last().before($exerciseTimeInput);
+    $($group).children().last().children().last().before($repsInput);
+    $($group).children().last().children().last().before($exerciseTimeInput);
   }
   else if ($(this).hasClass("endurance")) {
-    $("#exercises_grp").children().last().children().last().before($distanceInput);
-    $("#exercises_grp").children().last().children().last().before($caloriesInput);
-    $("#exercises_grp").children().last().children().last().before($exerciseTimeInput);
+    $($group).children().last().children().last().before($distanceInput);
+    $($group).children().last().children().last().before($caloriesInput);
+    $($group).children().last().children().last().before($exerciseTimeInput);
   }
 
   //Übungsliste schließen
   dialog_exercise.dialog("close");
-
+  $(".add_exercise_btn").removeClass("pressed");
 });
 
 //Übung löschen
@@ -275,9 +279,7 @@ $(document).on('click', '#save_entry_btn', function() {
     exercise_entries = [];
   });
 
-  var newEntry = {wod_date, round_entries, entry_time, entry_rounds, entry_comment};
-    console.log(newEntry);
- 
+  var newEntry = {wod_date, round_entries, entry_time, entry_rounds, entry_comment}; 
 
   $.post("entries", newEntry, function (result) {
   });
