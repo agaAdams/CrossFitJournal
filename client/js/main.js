@@ -242,31 +242,42 @@ $(document).on( "click", "#discard_entry_btn", function() {
 } );
 
 
-//Daten aus dem Fenster sammeln
+//Daten aus dem Fenster sammeln und in die DB eintragen
 $(document).on('click', '#save_entry_btn', function() {
 
   var wod_date = $("#entry_date").val(),
   entry_time = timeToNumber($("#entry_time").val()),
   entry_rounds = $("#entry_rounds").val(),
   entry_comment = $("#entry_comment").val(),
+  round_entries = [],
   exercise_entries = [];
 
-  $(".exercise_fs").each(function (index, exercise_fs) {
-    
-    var ex_name = $(this).children('legend:first').text(),
-    distance = $(this).find('#ex_distance').val(),
-    distance_unit = $(this).find('#unit_distance').text(),
-    weight = $(this).find('#ex_weight').val(),
-    ex_reps = $(this).find('#ex_reps').val(),
-    cal = $(this).find('#ex_cal').val(),
-    ex_time = timeToNumber($(this).find('#ex_time').val());
-    var exerciseEntry = {ex_name, distance, distance_unit, weight, ex_reps, cal, ex_time};
+  $(".round_fs").each(function (index, round_fs) {
+    var round_nr = index + 1;
 
-    exercise_entries.push(exerciseEntry);
+    $(round_fs).find($(".exercise_fs")).each(function (index, exercise_fs) {
+      
+      var ex_name = $(this).children('legend:first').text(),
+      distance = $(this).find('#ex_distance').val(),
+      distance_unit = $(this).find('#unit_distance').text(),
+      weight = $(this).find('#ex_weight').val(),
+      ex_reps = $(this).find('#ex_reps').val(),
+      cal = $(this).find('#ex_cal').val(),
+      ex_time = timeToNumber($(this).find('#ex_time').val());
+      
+      var exerciseEntry = {ex_name, distance, distance_unit, weight, ex_reps, cal, ex_time};
+      exercise_entries.push(exerciseEntry);
 
+    });
+
+    var roundEntry = {round_nr, exercise_entries};
+    round_entries.push(roundEntry);
+    exercise_entries = [];
   });
 
-  var newEntry = {wod_date, exercise_entries, entry_time, entry_rounds, entry_comment};
+  var newEntry = {wod_date, round_entries, entry_time, entry_rounds, entry_comment};
+    console.log(newEntry);
+ 
 
   $.post("entries", newEntry, function (result) {
   });
@@ -398,6 +409,12 @@ function setDateInputs() {
 function clearEntryDialog() {
   //leer die Formularfelder
   $("#wod_entry_form").trigger("reset");
+  //löscht alle Runden bis auf eine
+  while ($(".round_fs").length > 1) {
+    $(".round_fs").last().remove();
+  }
+  //versteckt den Runden löschen Button
+  $(".remove_round_btn").css({"display": "none"});
   //löscht alle Boxen für Übungen
   $("#exercises_grp").children().remove();
   //setzt das WOD-Datum auf heute zurück
