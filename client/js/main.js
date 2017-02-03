@@ -8,7 +8,7 @@ var days = 0;
 
 //------------Globale Objekte--------------------------
 //generisches Fieldset für einen Übungseintrag im WOD-Eintrag
-var $exerciseFieldset = '<fieldset id="exercise_fs" class="exercise_fs"><legend>E</legend><button id="remove_exercise_btn" class="remove_exercise_btn" type="button">-E</button></fieldset>'
+var $exerciseFieldset = '<fieldset id="exercise_fs" class="exercise_fs"><legend>E</legend><button id="remove_exercise_btn" class="remove_exercise_btn" type="button">-E</button></fieldset>';
 //Vorgaben für generisches Dialogfenster
 var dialogPresets = {
   autoOpen: false,
@@ -379,11 +379,28 @@ function getExerciseList(sender) {
   });
 }
 
-// EntryListe holen
+//Liste mit WOD-Einträgen holen und auf der Hauptseite anzeigen
 function getEntryList() {
+  //generisches div für einen WOD_eintrag
+  var $latestEntryDiv = $("<div>").addClass("latestEntry");
+  //vom server aus der DB die Liste an WOD-Einträgen holen
   $.getJSON("/entries.json", function (entryList) {
+    //die Liste durchgehen
     entryList.forEach(function (entry) {
-      $("#latest_entries_b3").append($("<p>"), entry.entry_comment);
+      $($latestEntryDiv).append('<p>').append(entry.wod_date.slice(0, 10));
+      $($latestEntryDiv).append('<h3>', entry.entry_rounds, ' Rounds of');
+
+      //
+      entry.round_entries.forEach(function (round) {
+        $($latestEntryDiv).append('<p>').append('Round', round.round_nr);
+
+        round.exercise_entries.forEach(function (exercise) {
+          $($latestEntryDiv).append('<p>').append(exercise.ex_reps, ' ', exercise.ex_name, ' ', exercise.weight);
+        });
+      });
+      $($latestEntryDiv).append('<p>').append('Total', entry.entry_time);
+      $($latestEntryDiv).append('<p>').append(entry.entry_comment);
+      $("#latest_entries_b3").append($latestEntryDiv);
     });
   });
 }
