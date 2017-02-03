@@ -7,7 +7,9 @@ var main = function () {
 var days = 0;
 
 //------------Globale Objekte--------------------------
-var $exerciseFieldset = '<fieldset id="exercise_fs" class="exercise_fs"><legend>E</legend><button id="remove_exercise_btn" class="remove_exercise_btn" class="button" type="button">-E</button></fieldset>'
+//generisches Fieldset für einen Übungseintrag im WOD-Eintrag
+var $exerciseFieldset = '<fieldset id="exercise_fs" class="exercise_fs"><legend>E</legend><button id="remove_exercise_btn" class="remove_exercise_btn" type="button">-E</button></fieldset>'
+//Vorgaben für generisches Dialogfenster
 var dialogPresets = {
   autoOpen: false,
   height: "auto",
@@ -168,10 +170,27 @@ $(document).on('click', '#add_exercise_btn', function() {
   dialog_exercise.dialog("open");
   $(".exerciselist").remove();
   getExerciseList($(this).attr("id"));
+  //markiert den auslösenden Button
+  $(this).addClass("pressed");
 });
 
-//Übung auswählen
+//neue Runde zum WOD-Eintrag hinzufügen
+$(document).on('click', '#add_round_btn', function() {
+  //der letzte Rundeneintrag wird geklont und der Clon hinter diesem eingefügt
+  $(".round_fs").last().clone().insertAfter($(".round_fs").last());
+  //der Rundenzähler im Fenster wird hochgesetzt
+  $("#entry_rounds").val(function(i, oldval) {
+    return ++oldval;
+  });
+
+  //RundenLöschButtons sichtbar machen
+  $(".remove_round_btn").css({"display": "inline"});
+
+});
+
+//Übung für den WOD-Eintrag auswählen
 $(document).on("click", ".exerciselist", function() {
+  //html-Felder für die Übung
   var $fs = $exerciseFieldset,
   $weightInput = '<input type="number" id="ex_weight" name="ex_weight" value="0" min="0" max="99">kg',
   $repsInput = '<input type="number" id="ex_reps" name="ex_reps" value="0" min="0" max="999">reps',
@@ -179,29 +198,33 @@ $(document).on("click", ".exerciselist", function() {
   $caloriesInput = '<input type="number" id="ex_cal" name="ex_cal" value="0" min="0" max="999">cal',
   $exerciseTimeInput = '<input type="time" id="ex_time" name="ex_time" step="1" min="00:00:00" max="00:59:59" value="00:00:00">';
 
-  //Fieldset exercise mit titel einfügen
-  $("#exercises_grp").children().last().css({"float":"left", "margin-left":"5px"});
-  $("#exercises_grp").append($fs);
-  $("#exercises_grp").children().last().children().first().text($(this).text());
+  //die Runde finden, in die die Übung eingefügt werden soll
+  var $group = $(".pressed").prev();
+
+  //Übungs Fieldset mit titel einfügen
+  $($group).children().last().css({"float":"left", "margin-left":"5px"});
+  $($group).append($fs);
+  $($group).children().last().children().first().text($(this).text());
 
 //je nach Übungstyp felder setzen
   if($(this).hasClass("lift")){
-    $("#exercises_grp").children().last().children().last().before($weightInput);
-    $("#exercises_grp").children().last().children().last().before($repsInput);
+    $($group).children().last().children().last().before($weightInput);
+    $($group).children().last().children().last().before($repsInput);
   }
   else if ($(this).hasClass("bodyweight")) {
-    $("#exercises_grp").children().last().children().last().before($repsInput);
-    $("#exercises_grp").children().last().children().last().before($exerciseTimeInput);
+    $($group).children().last().children().last().before($repsInput);
+    $($group).children().last().children().last().before($exerciseTimeInput);
   }
   else if ($(this).hasClass("endurance")) {
-    $("#exercises_grp").children().last().children().last().before($distanceInput);
-    $("#exercises_grp").children().last().children().last().before($caloriesInput);
-    $("#exercises_grp").children().last().children().last().before($exerciseTimeInput);
+    $($group).children().last().children().last().before($distanceInput);
+    $($group).children().last().children().last().before($caloriesInput);
+    $($group).children().last().children().last().before($exerciseTimeInput);
   }
 
   //Übungsliste schließen
   dialog_exercise.dialog("close");
-
+  //Markierung vom Button löschen
+  $(".add_exercise_btn").removeClass("pressed");
 });
 
 //Übung löschen
@@ -209,42 +232,73 @@ $(document).on('click', '#remove_exercise_btn', function() {
   $(this).parent().remove();
 });
 
+//Runde löschen
+$(document).on('click', '#remove_round_btn', function() {
+  //das Elternobjekt des Buttons (Runden Fieldset) wird samt Inhalt gelöscht
+  $(this).parent().remove();
+  //der Rundenzähler im Fenster wird runtergesetzt
+  $("#entry_rounds").val(function(i, oldval) {
+    return --oldval;
+  });
+  //falls es nur noch eine Runde gibt, wird der RundeLöschButton versteckt
+  if ($(".round_fs").length < 2) {
+    $(".remove_round_btn").css({"display": "none"});
+  }
+});
+
 //Eintragsfenster schließen
 $(document).on( "click", "#discard_entry_btn", function() {
+  //Bestätigungsdialog wird eingeblendet
   dialog_confirm.dialog("open");
-  // clearEntryDialog();
 } );
 
 
-//Daten aus dem Fenster sammeln
+//Daten aus dem Fenster sammeln und in die DB eintragen
 $(document).on('click', '#save_entry_btn', function() {
+  //Variablen für die Fenstereinträge
+  var wod_date = $("#entry_date").val(), //WOD-Datum
+  entry_time = timeToNumber($("#entry_time").val()), //WOD-Gesamtzeit
+  entry_rounds = $("#entry_rounds").val(), //WOD-Rundenzahl
+  entry_comment = $("#entry_comment").val(), //Kommentar
+  round_entries = []; //array mit Rundeneinträgen
 
-  var wod_date = $("#entry_date").val(),
-  entry_time = timeToNumber($("#entry_time").val()),
-  entry_rounds = $("#entry_rounds").val(),
-  entry_comment = $("#entry_comment").val(),
-  exercise_entries = [];
+  //jedes Runden Fieldset wird ausgelesen
+  $(".round_fs").each(function (index, round_fs) {
+    //jede Runde bekommt eine Nummer
+    var round_nr = index + 1,
+    exercise_entries = []; //und ein array mit Übungseinträgen
 
-  $(".exercise_fs").each(function (index, exercise_fs) {
-    
-    var ex_name = $(this).children('legend:first').text(),
-    distance = $(this).find('#ex_distance').val(),
-    distance_unit = $(this).find('#unit_distance').text(),
-    weight = $(this).find('#ex_weight').val(),
-    ex_reps = $(this).find('#ex_reps').val(),
-    cal = $(this).find('#ex_cal').val(),
-    ex_time = timeToNumber($(this).find('#ex_time').val());
-    var exerciseEntry = {ex_name, distance, distance_unit, weight, ex_reps, cal, ex_time};
+    //jedes Übungs Fieldset wird ausgelesen
+    $(round_fs).find($(".exercise_fs")).each(function (index, exercise_fs) {
+      //Variablen für die Übungseinträge
+      var ex_name = $(this).children('legend:first').text(), //Name
+      distance = $(this).find('#ex_distance').val(), //Entfernung
+      distance_unit = $(this).find('#unit_distance').text(), //Entfernungseinheit
+      weight = $(this).find('#ex_weight').val(), //Gewicht
+      ex_reps = $(this).find('#ex_reps').val(), //Wiederholungen
+      cal = $(this).find('#ex_cal').val(), //Kalorien
+      ex_time = timeToNumber($(this).find('#ex_time').val()); //Übungszeit
+      
+      //das Übungsobjekt aus allen obigen Einträgen bestehend
+      var exerciseEntry = {ex_name, distance, distance_unit, weight, ex_reps, cal, ex_time};
+      //das Übungsobjekt wird in das array mit Übungseinträgen hinzugefügt
+      exercise_entries.push(exerciseEntry);
+    });
 
-    exercise_entries.push(exerciseEntry);
-
+    //das Rundenobjekt, bestehend aus der Rundennummer und dem array mit Übungseinträgen dieser Runde
+    var roundEntry = {round_nr, exercise_entries};
+    //das Rundenobjekt wird in das Array mit Rundeneinträgen hinzugefügt
+    round_entries.push(roundEntry);
   });
 
-  var newEntry = {wod_date, exercise_entries, entry_time, entry_rounds, entry_comment};
+  //das Eintragsobjekt, bestehend aus allen Fensterdaten
+  var newEntry = {wod_date, round_entries, entry_time, entry_rounds, entry_comment};
 
+  //das Eintragsobjekt wird über die post-Rute an den server geschickt
   $.post("entries", newEntry, function (result) {
   });
 
+  //das Fenster wird zurückgesetzt
   clearEntryDialog();
 
   //schließt die Eingabemaske
@@ -372,6 +426,12 @@ function setDateInputs() {
 function clearEntryDialog() {
   //leer die Formularfelder
   $("#wod_entry_form").trigger("reset");
+  //löscht alle Runden bis auf eine
+  while ($(".round_fs").length > 1) {
+    $(".round_fs").last().remove();
+  }
+  //versteckt den Runden löschen Button
+  $(".remove_round_btn").css({"display": "none"});
   //löscht alle Boxen für Übungen
   $("#exercises_grp").children().remove();
   //setzt das WOD-Datum auf heute zurück

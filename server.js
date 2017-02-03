@@ -18,18 +18,23 @@ var ExerciseSchema = mongoose.Schema({
 
 var Exercise = mongoose.model("Exercise", ExerciseSchema);
 
-// Mongoose Model für Einträge
+// Mongoose Model für ÜbungsEinträge
 var EntrySchema = mongoose.Schema({
     "wod_date" : Date,
-    "exercises" : [
+    "round_entries" : [
         {
-            "ex_name" : String,
-            "distance" : Number,
-            "distance_unit" : String,
-            "weight" : Number,
-            "ex_reps" : Number,
-            "cal" : Number,
-            "ex_time" : Number
+            "round_nr" : Number,
+            "exercise_entries" : [
+                {
+                    "ex_name" : String,
+                    "distance" : Number,
+                    "distance_unit" : String,
+                    "weight" : Number,
+                    "ex_reps" : Number,
+                    "cal" : Number,
+                    "ex_time" : Number
+                }
+            ]
         }
     ],
     "entry_time" : Number,
@@ -59,7 +64,6 @@ app.post("/exercises", function (req, res) {
 //establish routes for entries collection
 app.get("/entries.json", function (req, res) {
     Entry.find({}, function (err, entries) {
-        // entries = entries.sort({name:1});
         res.json(entries);
     });
 });
@@ -67,11 +71,9 @@ app.get("/entries.json", function (req, res) {
 app.post("/entries", function (req, res) {
     var newEntry = new Entry({
         "wod_date":req.body.wod_date,
-        // "entry_time_start":req.body.entry_time_start,
-        // "entry_time_end":req.body.entry_time_end,
         "entry_comment":req.body.entry_comment,
         "entry_time":req.body.entry_time,
-        "exercises":req.body.exercise_entries,
+        "round_entries":req.body.round_entries,
         "entry_rounds":req.body.entry_rounds});
     newEntry.save();
 });

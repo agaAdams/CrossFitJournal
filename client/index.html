@@ -169,17 +169,16 @@
     				    <div id="exercises_grp">
     				    </div>
 
-                        <button id="add_exercise_btn" type="button">+E</button>
-
+                        <button id="add_exercise_btn" class="add_exercise_btn" type="button">+E</button>
+                        <button id="remove_round_btn" class="remove_round_btn" type="button">-R</button>
     				</fieldset>
-
-
+                        <button id="add_round_btn" type="button">+R</button>
     			</fieldset>
 
     			<fieldset id="wod_total">
     			<legend>WOD-Total</legend>
     			    <input type="time" id="entry_time" name="entry_time" step="1" min="00:00:00" max="00:59:59" value="00:00:00">total time
-    			    <input type="number" id="entry_rounds" name="entry_rounds" value="0" min="0" max="99">total rounds
+    			    <input type="number" id="entry_rounds" name="entry_rounds" value="1" min="0" max="99">total rounds
 					<textarea id="entry_comment" name="entry_comment" placeholder="WOD comments"></textarea>
 					<button id="save_entry_btn" type="button">Save Entry</button>
 					<button id="discard_entry_btn" type="button">Discard Entry</button>
