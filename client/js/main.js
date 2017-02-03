@@ -253,11 +253,11 @@ $(document).on('click', '#save_entry_btn', function() {
   entry_time = timeToNumber($("#entry_time").val()),
   entry_rounds = $("#entry_rounds").val(),
   entry_comment = $("#entry_comment").val(),
-  round_entries = [],
-  exercise_entries = [];
+  round_entries = [];
 
   $(".round_fs").each(function (index, round_fs) {
-    var round_nr = index + 1;
+    var round_nr = index + 1,
+    exercise_entries = [];
 
     $(round_fs).find($(".exercise_fs")).each(function (index, exercise_fs) {
       
@@ -271,15 +271,13 @@ $(document).on('click', '#save_entry_btn', function() {
       
       var exerciseEntry = {ex_name, distance, distance_unit, weight, ex_reps, cal, ex_time};
       exercise_entries.push(exerciseEntry);
-
     });
 
     var roundEntry = {round_nr, exercise_entries};
     round_entries.push(roundEntry);
-    exercise_entries = [];
   });
 
-  var newEntry = {wod_date, round_entries, entry_time, entry_rounds, entry_comment}; 
+  var newEntry = {wod_date, round_entries, entry_time, entry_rounds, entry_comment};
 
   $.post("entries", newEntry, function (result) {
   });
