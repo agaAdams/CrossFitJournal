@@ -7,7 +7,9 @@ var main = function () {
 var days = 0;
 
 //------------Globale Objekte--------------------------
+//generisches Fieldset für einen Übungseintrag im WOD-Eintrag
 var $exerciseFieldset = '<fieldset id="exercise_fs" class="exercise_fs"><legend>E</legend><button id="remove_exercise_btn" class="remove_exercise_btn" type="button">-E</button></fieldset>'
+//Vorgaben für generisches Dialogfenster
 var dialogPresets = {
   autoOpen: false,
   height: "auto",
@@ -168,14 +170,15 @@ $(document).on('click', '#add_exercise_btn', function() {
   dialog_exercise.dialog("open");
   $(".exerciselist").remove();
   getExerciseList($(this).attr("id"));
+  //markiert den auslösenden Button
   $(this).addClass("pressed");
 });
 
 //neue Runde zum WOD-Eintrag hinzufügen
 $(document).on('click', '#add_round_btn', function() {
-  //der letzte Rundeneintrag wird geklont und hinter diesem eingefügt
+  //der letzte Rundeneintrag wird geklont und der Clon hinter diesem eingefügt
   $(".round_fs").last().clone().insertAfter($(".round_fs").last());
-  //der Rundenzähler wird hochgesetzt
+  //der Rundenzähler im Fenster wird hochgesetzt
   $("#entry_rounds").val(function(i, oldval) {
     return ++oldval;
   });
@@ -185,8 +188,9 @@ $(document).on('click', '#add_round_btn', function() {
 
 });
 
-//Übung auswählen
+//Übung für den WOD-Eintrag auswählen
 $(document).on("click", ".exerciselist", function() {
+  //html-Felder für die Übung
   var $fs = $exerciseFieldset,
   $weightInput = '<input type="number" id="ex_weight" name="ex_weight" value="0" min="0" max="99">kg',
   $repsInput = '<input type="number" id="ex_reps" name="ex_reps" value="0" min="0" max="999">reps',
@@ -194,10 +198,10 @@ $(document).on("click", ".exerciselist", function() {
   $caloriesInput = '<input type="number" id="ex_cal" name="ex_cal" value="0" min="0" max="999">cal',
   $exerciseTimeInput = '<input type="time" id="ex_time" name="ex_time" step="1" min="00:00:00" max="00:59:59" value="00:00:00">';
 
-  //die richtige Runde finden
+  //die Runde finden, in die die Übung eingefügt werden soll
   var $group = $(".pressed").prev();
 
-  //Fieldset exercise mit titel einfügen
+  //Übungs Fieldset mit titel einfügen
   $($group).children().last().css({"float":"left", "margin-left":"5px"});
   $($group).append($fs);
   $($group).children().last().children().first().text($(this).text());
@@ -219,6 +223,7 @@ $(document).on("click", ".exerciselist", function() {
 
   //Übungsliste schließen
   dialog_exercise.dialog("close");
+  //Markierung vom Button löschen
   $(".add_exercise_btn").removeClass("pressed");
 });
 
@@ -229,8 +234,9 @@ $(document).on('click', '#remove_exercise_btn', function() {
 
 //Runde löschen
 $(document).on('click', '#remove_round_btn', function() {
+  //das Elternobjekt des Buttons (Runden Fieldset) wird samt Inhalt gelöscht
   $(this).parent().remove();
-  //der Rundenzähler wird runtergesetzt
+  //der Rundenzähler im Fenster wird runtergesetzt
   $("#entry_rounds").val(function(i, oldval) {
     return --oldval;
   });
@@ -242,46 +248,57 @@ $(document).on('click', '#remove_round_btn', function() {
 
 //Eintragsfenster schließen
 $(document).on( "click", "#discard_entry_btn", function() {
+  //Bestätigungsdialog wird eingeblendet
   dialog_confirm.dialog("open");
 } );
 
 
 //Daten aus dem Fenster sammeln und in die DB eintragen
 $(document).on('click', '#save_entry_btn', function() {
+  //Variablen für die Fenstereinträge
+  var wod_date = $("#entry_date").val(), //WOD-Datum
+  entry_time = timeToNumber($("#entry_time").val()), //WOD-Gesamtzeit
+  entry_rounds = $("#entry_rounds").val(), //WOD-Rundenzahl
+  entry_comment = $("#entry_comment").val(), //Kommentar
+  round_entries = []; //array mit Rundeneinträgen
 
-  var wod_date = $("#entry_date").val(),
-  entry_time = timeToNumber($("#entry_time").val()),
-  entry_rounds = $("#entry_rounds").val(),
-  entry_comment = $("#entry_comment").val(),
-  round_entries = [];
-
+  //jedes Runden Fieldset wird ausgelesen
   $(".round_fs").each(function (index, round_fs) {
+    //jede Runde bekommt eine Nummer
     var round_nr = index + 1,
-    exercise_entries = [];
+    exercise_entries = []; //und ein array mit Übungseinträgen
 
+    //jedes Übungs Fieldset wird ausgelesen
     $(round_fs).find($(".exercise_fs")).each(function (index, exercise_fs) {
+      //Variablen für die Übungseinträge
+      var ex_name = $(this).children('legend:first').text(), //Name
+      distance = $(this).find('#ex_distance').val(), //Entfernung
+      distance_unit = $(this).find('#unit_distance').text(), //Entfernungseinheit
+      weight = $(this).find('#ex_weight').val(), //Gewicht
+      ex_reps = $(this).find('#ex_reps').val(), //Wiederholungen
+      cal = $(this).find('#ex_cal').val(), //Kalorien
+      ex_time = timeToNumber($(this).find('#ex_time').val()); //Übungszeit
       
-      var ex_name = $(this).children('legend:first').text(),
-      distance = $(this).find('#ex_distance').val(),
-      distance_unit = $(this).find('#unit_distance').text(),
-      weight = $(this).find('#ex_weight').val(),
-      ex_reps = $(this).find('#ex_reps').val(),
-      cal = $(this).find('#ex_cal').val(),
-      ex_time = timeToNumber($(this).find('#ex_time').val());
-      
+      //das Übungsobjekt aus allen obigen Einträgen bestehend
       var exerciseEntry = {ex_name, distance, distance_unit, weight, ex_reps, cal, ex_time};
+      //das Übungsobjekt wird in das array mit Übungseinträgen hinzugefügt
       exercise_entries.push(exerciseEntry);
     });
 
+    //das Rundenobjekt, bestehend aus der Rundennummer und dem array mit Übungseinträgen dieser Runde
     var roundEntry = {round_nr, exercise_entries};
+    //das Rundenobjekt wird in das Array mit Rundeneinträgen hinzugefügt
     round_entries.push(roundEntry);
   });
 
+  //das Eintragsobjekt, bestehend aus allen Fensterdaten
   var newEntry = {wod_date, round_entries, entry_time, entry_rounds, entry_comment};
 
+  //das Eintragsobjekt wird über die post-Rute an den server geschickt
   $.post("entries", newEntry, function (result) {
   });
 
+  //das Fenster wird zurückgesetzt
   clearEntryDialog();
 
   //schließt die Eingabemaske

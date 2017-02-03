@@ -18,17 +18,7 @@ var ExerciseSchema = mongoose.Schema({
 
 var Exercise = mongoose.model("Exercise", ExerciseSchema);
 
-// Mongoose Model für Einträge
-var ExerciseEntrySchema = mongoose.Schema({
-    "ex_name" : String,
-    "distance" : Number,
-    "distance_unit" : String,
-    "weight" : Number,
-    "ex_reps" : Number,
-    "cal" : Number,
-    "ex_time" : Number
-});
-
+// Mongoose Model für ÜbungsEinträge
 var EntrySchema = mongoose.Schema({
     "wod_date" : Date,
     "round_entries" : [
@@ -85,6 +75,5 @@ app.post("/entries", function (req, res) {
         "entry_time":req.body.entry_time,
         "round_entries":req.body.round_entries,
         "entry_rounds":req.body.entry_rounds});
-    console.log(newEntry);
     newEntry.save();
 });
