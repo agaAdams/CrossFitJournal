@@ -381,25 +381,48 @@ function getExerciseList(sender) {
 
 //Liste mit WOD-Einträgen holen und auf der Hauptseite anzeigen
 function getEntryList() {
-  //generisches div für einen WOD_eintrag
-  var $latestEntryDiv = $("<div>").addClass("latestEntry");
   //vom server aus der DB die Liste an WOD-Einträgen holen
   $.getJSON("/entries.json", function (entryList) {
     //die Liste durchgehen
     entryList.forEach(function (entry) {
-      $($latestEntryDiv).append('<p>').append(entry.wod_date.slice(0, 10));
-      $($latestEntryDiv).append('<h3>', entry.entry_rounds, ' Rounds of');
+      //generisches div für einen WOD_eintrag
+      var $latestEntryDiv = $("<div class='latestEntry'>");
+      //Datum setzen
+      $($latestEntryDiv).append('<h4 class="le_date">');
+      $($latestEntryDiv).find(".le_date").text(entry.wod_date.slice(0, 10));
 
-      //
+      //Eintragstitel, je nach WOD-Typ
+      $($latestEntryDiv).append('<h3>');
+      if (entry.entry_rounds > 1) {
+        var lf_roundheader = entry.entry_rounds + " Rounds of";
+        $($latestEntryDiv).find("h3").text(lf_roundheader);
+      }
+
+      //Rundeneinträge
       entry.round_entries.forEach(function (round) {
-        $($latestEntryDiv).append('<p>').append('Round', round.round_nr);
-
-        round.exercise_entries.forEach(function (exercise) {
-          $($latestEntryDiv).append('<p>').append(exercise.ex_reps, ' ', exercise.ex_name, ' ', exercise.weight);
+        //Rundennummern, falls mehr als eine Runde
+        if (entry.round_entries.length > 1) {
+          $($latestEntryDiv).append('<p class="ls_roundnr">')
+          $($latestEntryDiv).find(".ls_roundnr").text('Round', round.round_nr);
+        }
+        //Übungseinträge
+        round.exercise_entries.forEach(function (exercise, index) {
+          var lf_exerciseentry = exercise.ex_reps + ' ' + exercise.ex_name + ' ' + exercise.weight + ' kg';
+          var lf_exnr = "ex_" + index;
+          $('<p>').attr("id", lf_exnr).appendTo($latestEntryDiv);
+          var lf_exnrid = "#" + lf_exnr;
+          $($latestEntryDiv).find(lf_exnrid).text(lf_exerciseentry);
         });
       });
-      $($latestEntryDiv).append('<p>').append('Total', entry.entry_time);
-      $($latestEntryDiv).append('<p>').append(entry.entry_comment);
+
+      if (entry.entry_time) {
+        var totalTime = numberToTime(entry.entry_time);
+        $($latestEntryDiv).append('<h3 class="lf_totaltime">');
+        $($latestEntryDiv).find(".lf_totaltime").text('Total Time '+ totalTime);
+      }
+      $($latestEntryDiv).append('<p class"lf_comment">');
+      $($latestEntryDiv).find(".lf_comment").text(entry.entry_comment);
+
       $("#latest_entries_b3").append($latestEntryDiv);
     });
   });
@@ -415,6 +438,19 @@ function timeToNumber(timeString){
     }
   else {
     return 0;
+  }
+}
+
+function numberToTime(timeNumber){
+  var minutes, seconds;
+  if (timeNumber % 60 == 0) {
+    minutes = (timeNumber / 60) + " min";
+    return minutes;
+  }
+  else {
+    minutes = Math.floor(timeNumber / 60) + " min ";
+    seconds = (timeNumber % 60) + " sec";
+    return minutes + seconds;
   }
 }
 
