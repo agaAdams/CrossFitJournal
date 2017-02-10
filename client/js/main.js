@@ -8,7 +8,7 @@ var days = 0;
 
 //------------Globale Objekte--------------------------
 //generisches Fieldset für einen Übungseintrag im WOD-Eintrag
-var $exerciseFieldset = '<fieldset id="exercise_fs" class="exercise_fs"><legend>E</legend><button id="remove_exercise_btn" class="remove_exercise_btn" type="button">-E</button></fieldset>'
+var $exerciseFieldset = '<fieldset id="exercise_fs" class="exercise_fs"><legend>E</legend><button id="remove_exercise_btn" class="remove_exercise_btn" type="button">-E</button></fieldset>';
 //Vorgaben für generisches Dialogfenster
 var dialogPresets = {
   autoOpen: false,
@@ -379,25 +379,115 @@ function getExerciseList(sender) {
   });
 }
 
-// EntryListe holen
+//Liste mit WOD-Einträgen holen und auf der Hauptseite anzeigen
 function getEntryList() {
+  //vom server aus der DB die Liste an WOD-Einträgen holen
   $.getJSON("/entries.json", function (entryList) {
+    //die Liste durchgehen
     entryList.forEach(function (entry) {
-      $("#latest_entries_b3").append($("<p>"), entry.entry_comment);
+      //generisches div für je einen WOD_eintrag erstellen
+      var $latestEntryDiv = $("<div class='latestEntry'>");
+      //Datum setzen
+      $($latestEntryDiv).append('<h4 class="le_date">');
+      $($latestEntryDiv).find(".le_date").text(entry.wod_date.slice(0, 10));
+
+      //Eintragstitel, falls der Rundenzähler mehr als eine Runde hat
+      $($latestEntryDiv).append('<h3>');
+      if (entry.entry_rounds > 1) {
+        var lf_roundheader = entry.entry_rounds + " Rounds for Time";
+        $($latestEntryDiv).find("h3").text(lf_roundheader);
+      }
+
+      //Rundeneinträge
+      entry.round_entries.forEach(function (round) {
+        //Rundennummern, falls mehr als eine Runde
+        if (entry.round_entries.length > 1) {
+          $($latestEntryDiv).append('<p class="ls_roundnr">')
+          $($latestEntryDiv).find(".ls_roundnr").text('Round', round.round_nr);
+        }
+
+        //Übungseinträge
+        round.exercise_entries.forEach(function (exercise, index) {
+          //der Text des Übungseintrag variiert je nach Übungstyp und eingetragenen Daten
+          var lf_exerciseentry;
+          //Ausdauerübungen auf Entfernung
+          if (exercise.distance) {
+            lf_exerciseentry = exercise.distance + exercise.distance_unit + " " + exercise.ex_name;
+          }
+          //Ausdauerübungen mit Kalorien und ggf. Zeitangaben
+          else if (exercise.cal) {
+            if (exercise.ex_time) {
+              lf_exerciseentry = numberToTime(exercise.ex_time) + " " + exercise.ex_name + ", " + exercise.cal + "cal ";
+            }
+            else {
+              lf_exerciseentry = exercise.cal + "cal " + exercise.ex_name;
+            }
+          }
+          //Übungen mit Gewichten
+          else if (exercise.weight) {
+            lf_exerciseentry = exercise.ex_reps + " " + exercise.ex_name + " " + exercise.weight + "kg";
+          }
+          //Übungen mit einer Zeitkomponente
+          else if (exercise.ex_time) {
+            lf_exerciseentry = numberToTime(exercise.ex_time) + " " + exercise.ex_name;
+          }
+          //übrige Übungen nach Wiederholungen
+          else {
+            lf_exerciseentry = exercise.ex_reps + " " + exercise.ex_name;
+          }
+
+          //jede Übung erhält eine eigene Eintragszeile
+          var lf_exnr = "ex_" + index;
+          $('<p>').attr("id", lf_exnr).appendTo($latestEntryDiv);
+          var lf_exnrid = "#" + lf_exnr;
+          $($latestEntryDiv).find(lf_exnrid).text(lf_exerciseentry);
+        });
+      });
+
+      //Gesamtzeit des WODS, falls vorhanden
+      if (entry.entry_time) {
+        var totalTime = numberToTime(entry.entry_time);
+        $($latestEntryDiv).append('<h3 class="lf_totaltime">');
+        $($latestEntryDiv).find(".lf_totaltime").text('Total Time '+ totalTime);
+      }
+      //Kommentar zum WOD
+      $($latestEntryDiv).append('<p class="lf_comment">');
+      $($latestEntryDiv).find(".lf_comment").text(entry.entry_comment);
+
+      //das gefüllte DIV wird in die Liste eingefügt
+      $("#latest_entries_b3").append($latestEntryDiv);
     });
   });
 }
 
 // Zeit in Zahl umrechnen
 function timeToNumber(timeString){
+  //falls eine Zahl übergeben wird
   if (timeString) {
+    //Sekunden umwandeln
     var sec = timeString.slice(6, 8),
+    //Minuten umwandeln
     min = timeString.slice(3, 5),
     time = (min * 60) + Number(sec);
     return time;
     }
   else {
     return 0;
+  }
+}
+
+function numberToTime(timeNumber){
+  var minutes, seconds;
+  //falls es eine gerade Minutenzahl gibt
+  if (timeNumber % 60 == 0) {
+    minutes = (timeNumber / 60) + " min";
+    return minutes;
+  }
+  //ansonsten werden Minuten mit Restsekunden ausgegeben
+  else {
+    minutes = Math.floor(timeNumber / 60) + " min ";
+    seconds = (timeNumber % 60) + " sec";
+    return minutes + seconds;
   }
 }
 

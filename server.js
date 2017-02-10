@@ -64,6 +64,7 @@ app.post("/exercises", function (req, res) {
 //establish routes for entries collection
 app.get("/entries.json", function (req, res) {
     Entry.find({}, function (err, entries) {
+        // entries = entries.sort({wod_date:-1});
         res.json(entries);
     });
 });

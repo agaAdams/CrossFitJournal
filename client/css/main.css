@@ -125,12 +125,12 @@ h2 {
 
 .content {
     text-align: left;
-    color; #262322;
+    color: #262322;
 }
 
 #user_btns_b2 {
     background-color: #FFBCB5;
-    color; #262322;
+    color: #262322;
     float: left;
     width: 150px;
     margin-left: 10px;
@@ -138,12 +138,16 @@ h2 {
 
 #latest_entries_b3 {
     background-color: #FFBCB5;
-    color; #262322;
+    color: #262322;
     float: left;
     width: 460px;
     margin-top: 10px;
 }
 
+#latest_entries_b3 p{
+    line-height: 50%;
+    font-size: 80%;
+}
 #named_PRs_b4 {
     float: left;
     width: 300px;
@@ -242,6 +246,10 @@ input, textarea {
 
 .remove_round_btn {
     display: none;
+}
+.le_date {
+    text-align: right;
+    color: #523e44;
 }
 /* ==========================================================================
    Helper classes
